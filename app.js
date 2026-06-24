@@ -492,10 +492,12 @@ function setFeedbackDetails(mainText, explanationText, tone, summaryText = "", a
   }
 }
 
-function buildAnswerFeedbackParts(statusText, correctAnswerText) {
+function buildAnswerFeedbackParts(statusText, correctAnswerText = "") {
   const parts = [{ text: statusText }];
 
-  parts.push({ text: correctAnswerText, className: "feedback-correct-answer" });
+  if (correctAnswerText) {
+    parts.push({ text: `正確答案：${correctAnswerText}`, className: "feedback-correct-answer" });
+  }
   return parts;
 }
 
@@ -679,9 +681,9 @@ function renderFeedback(question) {
     const analysisStatusText = getAnalysisStatusText(question);
 
     if (selected === question.answer) {
-      setFeedbackDetails(buildAnswerFeedbackParts("答對。正確答案：", answerText), explanationText, "success", "", analysisStatusText);
+      setFeedbackDetails(buildAnswerFeedbackParts("答對。"), explanationText, "success", "", analysisStatusText);
     } else {
-      setFeedbackDetails(buildAnswerFeedbackParts("答錯。正確答案：", answerText), explanationText, "danger", "", analysisStatusText);
+      setFeedbackDetails(buildAnswerFeedbackParts("答錯。", answerText), explanationText, "danger", "", analysisStatusText);
     }
     return;
   }
@@ -698,14 +700,14 @@ function renderFeedback(question) {
   const analysisStatusText = getAnalysisStatusText(question);
 
   if (!selected) {
-    setFeedbackDetails(buildAnswerFeedbackParts("未作答。正確答案：", answerText), explanationText, "danger", summary, analysisStatusText);
+    setFeedbackDetails(buildAnswerFeedbackParts("未作答。", answerText), explanationText, "danger", summary, analysisStatusText);
     return;
   }
 
   if (selected === question.answer) {
-    setFeedbackDetails(buildAnswerFeedbackParts("本題答對。正確答案：", answerText), explanationText, "success", summary, analysisStatusText);
+    setFeedbackDetails(buildAnswerFeedbackParts("答對。"), explanationText, "success", summary, analysisStatusText);
   } else {
-    setFeedbackDetails(buildAnswerFeedbackParts("本題答錯。正確答案：", answerText), explanationText, "danger", summary, analysisStatusText);
+    setFeedbackDetails(buildAnswerFeedbackParts("答錯。", answerText), explanationText, "danger", summary, analysisStatusText);
   }
 }
 
