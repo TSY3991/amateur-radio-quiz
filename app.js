@@ -4,6 +4,13 @@ const BANK_VIEW_KEY = "amateurRadioQuiz.bankView.v1";
 const EXAM_DURATION_SECONDS = 40 * 60;
 const BANK_PAGE_SIZE = 20;
 
+const ANALYSIS_STATUS_LABELS = {
+  source_based: "有來源解析",
+  concept: "概念說明",
+  pending: "解析待補",
+  needs_review: "待確認"
+};
+
 const EXAM_RULES = {
   totalQuestions: 35,
   passingScore: 25,
@@ -420,7 +427,15 @@ function getAnswerText(question, key = question.answer) {
 
 function getExplanationText(question) {
   const explanation = (question.explanation || "").trim();
-  return explanation ? `解析：${explanation}` : "解析：尚未提供";
+  return explanation ? `解析：${explanation}` : "解析：本題解析待補，未以 AI 推論補充。";
+}
+
+function getAnalysisStatusText(question) {
+  const explanation = (question.explanation || "").trim();
+  const statusKey = question.analysisStatus || question.analysisType || (explanation ? "concept" : "pending");
+  const statusLabel = ANALYSIS_STATUS_LABELS[statusKey] || statusKey;
+  const sourceLabel = (question.sourceLabel || question.analysisSource || "").trim();
+  return sourceLabel ? `解析狀態：${statusLabel}｜${sourceLabel}` : `解析狀態：${statusLabel}`;
 }
 
 function resetFeedback(tone = "") {
@@ -463,10 +478,13 @@ function createFeedbackRow(labelText, contentText, rowClass) {
   return row;
 }
 
-function setFeedbackDetails(mainText, explanationText, tone, summaryText = "") {
+function setFeedbackDetails(mainText, explanationText, tone, summaryText = "", analysisStatusText = "") {
   resetFeedback(tone);
 
   els.feedbackText.append(createFeedbackRow("答案", mainText, "feedback-answer"));
+  if (analysisStatusText) {
+    els.feedbackText.append(createFeedbackRow("狀態", analysisStatusText, "feedback-analysis-status"));
+  }
   els.feedbackText.append(createFeedbackRow("解析", explanationText, "feedback-explanation"));
 
   if (summaryText) {
@@ -662,11 +680,12 @@ function renderFeedback(question) {
 
     const answerText = getAnswerText(question);
     const explanationText = getExplanationText(question);
+    const analysisStatusText = getAnalysisStatusText(question);
 
     if (selected === question.answer) {
-      setFeedbackDetails(buildAnswerFeedbackParts("答對，正解為", "", answerText), explanationText, "success");
+      setFeedbackDetails(buildAnswerFeedbackParts("答對，正解為", "", answerText), explanationText, "success", "", analysisStatusText);
     } else {
-      setFeedbackDetails(buildAnswerFeedbackParts("答錯，你選", getAnswerText(question, selected), `正解為 ${answerText}`), explanationText, "danger");
+      setFeedbackDetails(buildAnswerFeedbackParts("答錯，你選", getAnswerText(question, selected), `正解為 ${answerText}`), explanationText, "danger", "", analysisStatusText);
     }
     return;
   }
@@ -680,16 +699,17 @@ function renderFeedback(question) {
   const summary = `${result.passed ? "合格" : "未合格"}：答對 ${result.score} 題，答錯 ${result.wrong} 題`;
   const answerText = getAnswerText(question);
   const explanationText = getExplanationText(question);
+  const analysisStatusText = getAnalysisStatusText(question);
 
   if (!selected) {
-    setFeedbackDetails(buildAnswerFeedbackParts("未作答，", "", `正解為 ${answerText}`), explanationText, "danger", summary);
+    setFeedbackDetails(buildAnswerFeedbackParts("未作答，", "", `正解為 ${answerText}`), explanationText, "danger", summary, analysisStatusText);
     return;
   }
 
   if (selected === question.answer) {
-    setFeedbackDetails(buildAnswerFeedbackParts("本題答對，正解為", "", answerText), explanationText, "success", summary);
+    setFeedbackDetails(buildAnswerFeedbackParts("本題答對，正解為", "", answerText), explanationText, "success", summary, analysisStatusText);
   } else {
-    setFeedbackDetails(buildAnswerFeedbackParts("本題答錯，你選", getAnswerText(question, selected), `正解為 ${answerText}`), explanationText, "danger", summary);
+    setFeedbackDetails(buildAnswerFeedbackParts("本題答錯，你選", getAnswerText(question, selected), `正解為 ${answerText}`), explanationText, "danger", summary, analysisStatusText);
   }
 }
 

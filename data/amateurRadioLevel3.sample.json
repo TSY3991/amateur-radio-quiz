@@ -22,7 +22,10 @@
         { "key": "4", "text": "以上皆是" }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "",
+      "analysisStatus": "pending",
+      "analysisSource": "",
+      "needsReview": true
     },
     {
       "id": "radio-level3-regulations-002",
@@ -38,7 +41,10 @@
         { "key": "4", "text": "國防部" }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "",
+      "analysisStatus": "pending",
+      "analysisSource": "",
+      "needsReview": true
     },
     {
       "id": "radio-level3-regulations-003",
@@ -54,7 +60,10 @@
         { "key": "4", "text": "業餘無線電人員及電臺管理辦法" }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "",
+      "analysisStatus": "pending",
+      "analysisSource": "",
+      "needsReview": true
     },
     {
       "id": "radio-level3-regulations-004",
@@ -70,7 +79,10 @@
         { "key": "4", "text": "以上皆是" }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "",
+      "analysisStatus": "pending",
+      "analysisSource": "",
+      "needsReview": true
     },
     {
       "id": "radio-level3-regulations-005",
@@ -86,7 +98,10 @@
         { "key": "4", "text": "國際電信聯盟" }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "",
+      "analysisStatus": "pending",
+      "analysisSource": "",
+      "needsReview": true
     }
   ]
 }
