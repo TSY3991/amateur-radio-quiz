@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "title": "三等業餘無線電人員資格測試題庫",
+    "level": "level3",
+    "sourceFile": "三等業餘無線電人員資格測試題庫.pdf",
+    "sampleSize": 5,
+    "answerSource": "答案列於 PDF 題號前方",
+    "notes": "此檔為題庫 JSON 格式樣本，尚未匯入完整題庫。"
+  },
+  "questions": [
+    {
+      "id": "radio-level3-regulations-001",
+      "category": "無線電規章與相關法規",
+      "sourcePage": 19,
+      "number": 1,
+      "type": "single_choice",
+      "question": "下列敘述何者為 NCC 業餘無線電法規規範的目的?",
+      "options": [
+        { "key": "1", "text": "儘可能給最多的公民提供個人無線電通訊" },
+        { "key": "2", "text": "提供國際非營利組織的通訊" },
+        { "key": "3", "text": "提昇無線電的通訊與技術" },
+        { "key": "4", "text": "以上皆是" }
+      ],
+      "answer": "3",
+      "explanation": ""
+    },
+    {
+      "id": "radio-level3-regulations-002",
+      "category": "無線電規章與相關法規",
+      "sourcePage": 19,
+      "number": 2,
+      "type": "single_choice",
+      "question": "在我國是哪一個機關負責業餘無線電法規?",
+      "options": [
+        { "key": "1", "text": "內政部" },
+        { "key": "2", "text": "國際電信聯盟" },
+        { "key": "3", "text": "國家通訊傳播委員會" },
+        { "key": "4", "text": "國防部" }
+      ],
+      "answer": "3",
+      "explanation": ""
+    },
+    {
+      "id": "radio-level3-regulations-003",
+      "category": "無線電規章與相關法規",
+      "sourcePage": 19,
+      "number": 3,
+      "type": "single_choice",
+      "question": "NCC 的法規內哪一部分包含了業餘無線電操作?",
+      "options": [
+        { "key": "1", "text": "電信管理法" },
+        { "key": "2", "text": "實驗研發專用電信網路設置使用管理辦法" },
+        { "key": "3", "text": "專用電信網路設置使用管理辦法" },
+        { "key": "4", "text": "業餘無線電人員及電臺管理辦法" }
+      ],
+      "answer": "4",
+      "explanation": ""
+    },
+    {
+      "id": "radio-level3-regulations-004",
+      "category": "無線電規章與相關法規",
+      "sourcePage": 19,
+      "number": 4,
+      "type": "single_choice",
+      "question": "下述何者為 NCC 業餘無線電法規規範的目的?",
+      "options": [
+        { "key": "1", "text": "促進國際交流" },
+        { "key": "2", "text": "提供我國救災單位廉價的通訊" },
+        { "key": "3", "text": "訓練軍事電臺操作人員" },
+        { "key": "4", "text": "以上皆是" }
+      ],
+      "answer": "1",
+      "explanation": ""
+    },
+    {
+      "id": "radio-level3-regulations-005",
+      "category": "無線電規章與相關法規",
+      "sourcePage": 19,
+      "number": 5,
+      "type": "single_choice",
+      "question": "下列何者會針對中繼電臺的收發頻道跟其他數據提出建議?",
+      "options": [
+        { "key": "1", "text": "頻譜管理員" },
+        { "key": "2", "text": "頻率協調員" },
+        { "key": "3", "text": "國家通訊傳播委員會地區監理處" },
+        { "key": "4", "text": "國際電信聯盟" }
+      ],
+      "answer": "2",
+      "explanation": ""
+    }
+  ]
+}

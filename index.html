@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>三等業餘無線電人員測驗練習</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="quiz-shell">
+      <header class="quiz-header">
+        <div class="title-block">
+          <p class="eyebrow">練習模式</p>
+          <h1>三等業餘無線電人員測驗練習</h1>
+          <p class="exam-note">35 題組卷 · 25 題及格</p>
+        </div>
+        <div class="score-card" aria-live="polite">
+          <span>成績</span>
+          <strong id="scoreText">-</strong>
+        </div>
+      </header>
+
+      <nav class="mode-tabs" aria-label="測驗模式">
+        <button id="examModeButton" type="button" class="mode-tab active" aria-current="page">
+          <span>模擬考</span>
+        </button>
+        <button id="practiceModeButton" type="button" class="mode-tab">
+          <span>題庫練習</span>
+          <small>即時正解</small>
+        </button>
+        <button id="wrongBookModeButton" type="button" class="mode-tab">
+          <span>錯題本</span>
+          <small id="wrongCountBadge">0 題</small>
+        </button>
+        <button type="button" class="mode-tab" disabled>
+          <span>統計</span>
+          <small>待開發</small>
+        </button>
+      </nav>
+
+      <div id="examLayout" class="exam-layout">
+        <aside class="status-panel" aria-label="測驗狀態">
+          <div class="status-heading">
+            <span id="progressText">載入中</span>
+            <strong id="answeredText">0 / 35</strong>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+
+          <dl class="exam-rules">
+            <div>
+              <dt>題數</dt>
+              <dd id="totalRuleText">35</dd>
+            </div>
+            <div>
+              <dt id="targetRuleLabel">及格</dt>
+              <dd id="targetRuleText">25</dd>
+            </div>
+            <div>
+              <dt id="timerRuleLabel">倒數</dt>
+              <dd id="timerText">40:00</dd>
+            </div>
+          </dl>
+
+          <div id="practiceControls" class="practice-controls" hidden>
+            <div class="practice-controls-head">
+              <span class="practice-controls-title">練習範圍</span>
+              <span id="practiceRangeCount" class="practice-range-count">目前範圍：0 題</span>
+            </div>
+            <label class="practice-size-control" for="practiceQuestionCountSelect">
+              <span>抽題數</span>
+              <select id="practiceQuestionCountSelect">
+                <option value="35">35 題</option>
+                <option value="50">50 題</option>
+                <option value="100">100 題</option>
+                <option value="all">全部題目</option>
+              </select>
+            </label>
+            <div class="practice-checks">
+              <label><input type="checkbox" name="practiceCategory" value="regulations" checked /> 無線電規章與相關法規</label>
+              <label><input type="checkbox" name="practiceCategory" value="communication_methods" checked /> 無線電通訊方法</label>
+              <label><input type="checkbox" name="practiceCategory" value="radio_system_principles" checked /> 無線電系統原理</label>
+              <label><input type="checkbox" name="practiceCategory" value="safety_protection" checked /> 無線電相關安全防護</label>
+              <label><input type="checkbox" name="practiceCategory" value="electromagnetic_compatibility" checked /> 電磁相容性技術</label>
+              <label><input type="checkbox" name="practiceCategory" value="rf_interference_prevention" checked /> 射頻干擾的預防與排除</label>
+            </div>
+          </div>
+
+          <div id="resultPanel" class="result-panel" hidden>
+            <span id="resultLabel">-</span>
+            <strong id="resultScore">-</strong>
+            <p id="resultDetail">-</p>
+          </div>
+        </aside>
+
+        <section class="quiz-panel" aria-labelledby="questionTitle">
+          <div class="question-meta">
+            <span id="categoryText">-</span>
+          </div>
+          <h2 id="questionTitle">讀取題庫中...</h2>
+          <form id="optionsForm" class="options-list"></form>
+          <p id="feedbackText" class="feedback" aria-live="polite"></p>
+        </section>
+      </div>
+
+      <section id="wrongBookPanel" class="wrongbook-panel" hidden>
+        <div class="wrongbook-header">
+          <div>
+            <p class="eyebrow">本機瀏覽器記錄</p>
+            <h2>錯題本</h2>
+          </div>
+          <button id="clearWrongBookButton" type="button" class="secondary">清空錯題</button>
+        </div>
+        <div id="wrongBookStats" class="wrongbook-stats"></div>
+        <div id="wrongBookList" class="wrongbook-list"></div>
+      </section>
+
+      <footer id="quizActions" class="quiz-actions">
+        <button id="prevButton" type="button" class="secondary">上一題</button>
+        <button id="nextButton" type="button" class="secondary">下一題</button>
+        <button id="submitButton" type="button" class="primary">交卷</button>
+        <button id="resetButton" type="button" class="secondary">重新抽題</button>
+      </footer>
+
+      <p class="site-disclaimer">
+        題目為國家通訊傳播委員會官方公告題庫，正解為官方答案；解析為本站自寫，僅供參考。
+      </p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
