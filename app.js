@@ -883,22 +883,14 @@ function renderBankRuleSummary() {
     const sampleQuestion = state.questionBank.find((question) => question.categoryKey === rule.key);
     if (!sampleQuestion) continue;
 
-    const card = document.createElement("article");
-    card.className = "bank-rule-card";
-    card.innerHTML = `
+    const item = document.createElement("article");
+    item.className = "bank-rule-item";
+    item.innerHTML = `
       <strong>${sampleQuestion.category}</strong>
-      <dl>
-        <div>
-          <dt>題庫</dt>
-          <dd>${getCategoryQuestionCount(state.questionBank, rule.key)}</dd>
-        </div>
-        <div>
-          <dt>抽題</dt>
-          <dd>${rule.count}</dd>
-        </div>
-      </dl>
+      <span>題庫 ${getCategoryQuestionCount(state.questionBank, rule.key)}</span>
+      <span>抽 ${rule.count}</span>
     `;
-    grid.append(card);
+    grid.append(item);
   }
 
   els.bankRuleSummary.append(grid);

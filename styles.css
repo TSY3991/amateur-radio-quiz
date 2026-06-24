@@ -736,58 +736,50 @@ h1 {
 
 .bank-rule-summary {
   display: grid;
-  gap: 10px;
-  margin-bottom: 14px;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
 .bank-rule-note {
   margin: 0;
   color: var(--text);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 800;
   line-height: 1.5;
 }
 
 .bank-rule-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
+  gap: 6px;
 }
 
-.bank-rule-card {
-  padding: 12px;
-  border: 1px solid rgba(38, 50, 74, 0.2);
+.bank-rule-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid rgba(38, 50, 74, 0.16);
   border-radius: 8px;
   background: #ffffff;
-  box-shadow: 0 6px 16px rgba(38, 50, 74, 0.06);
+  box-shadow: 0 5px 12px rgba(38, 50, 74, 0.05);
 }
 
-.bank-rule-card strong {
-  display: block;
-  min-height: 42px;
+.bank-rule-item strong {
+  min-width: 0;
   color: var(--text);
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: 13px;
+  line-height: 1.35;
 }
 
-.bank-rule-card dl {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  margin: 10px 0 0;
-}
-
-.bank-rule-card dt {
-  color: var(--muted);
+.bank-rule-item span {
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
   font-size: 12px;
   font-weight: 800;
-}
-
-.bank-rule-card dd {
-  margin: 3px 0 0;
-  color: var(--accent-strong);
-  font-size: 18px;
-  font-weight: 900;
+  white-space: nowrap;
 }
 
 .question-bank-list {
@@ -1114,15 +1106,26 @@ h1 {
   }
 
   .mode-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 8px;
-    margin-right: -9px;
-    margin-left: -9px;
-    padding: 0 9px 2px;
+    margin-right: 0;
+    margin-left: 0;
+    overflow-x: visible;
+    padding: 0 0 2px;
   }
 
   .mode-tab {
+    width: 100%;
+    min-width: 0;
     min-height: 48px;
     padding: 0 10px;
+    justify-content: center;
+  }
+
+  .mode-tab span {
+    text-align: center;
+    white-space: normal;
   }
 
   .mode-tab small {
@@ -1184,8 +1187,12 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .bank-rule-grid {
-    grid-template-columns: 1fr;
+  .bank-rule-item {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bank-rule-item strong {
+    grid-column: 1 / -1;
   }
 
   .wrongbook-actions {
@@ -1200,5 +1207,11 @@ h1 {
   .option-row {
     min-height: 62px;
     padding: 15px 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .mode-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
