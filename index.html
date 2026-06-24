@@ -14,9 +14,15 @@
           <h1>三等業餘無線電人員測驗練習</h1>
           <p class="exam-note">35 題組卷 · 25 題及格</p>
         </div>
-        <div class="score-card" aria-live="polite">
-          <span>成績</span>
-          <strong id="scoreText">-</strong>
+        <div class="header-actions">
+          <a class="follow-link" href="https://www.facebook.com/TSY.Microglow" target="_blank" rel="noopener noreferrer">
+            <span>追蹤 FB</span>
+            <strong>TSY 微光創作室</strong>
+          </a>
+          <div class="score-card" aria-live="polite">
+            <span>成績</span>
+            <strong id="scoreText">-</strong>
+          </div>
         </div>
       </header>
 
@@ -28,13 +34,17 @@
           <span>題庫練習</span>
           <small>即時正解</small>
         </button>
+        <button id="bankModeButton" type="button" class="mode-tab">
+          <span>瀏覽題庫</span>
+          <small>題庫</small>
+        </button>
         <button id="wrongBookModeButton" type="button" class="mode-tab">
           <span>錯題本</span>
           <small id="wrongCountBadge">0 題</small>
         </button>
-        <button type="button" class="mode-tab" disabled>
+        <button id="statsModeButton" type="button" class="mode-tab">
           <span>統計</span>
-          <small>待開發</small>
+          <small>本機</small>
         </button>
       </nav>
 
@@ -68,6 +78,10 @@
               <span class="practice-controls-title">練習範圍</span>
               <span id="practiceRangeCount" class="practice-range-count">目前範圍：0 題</span>
             </div>
+            <div class="practice-range-actions" aria-label="練習範圍快速操作">
+              <button id="selectAllPracticeButton" type="button" class="secondary">全選</button>
+              <button id="clearPracticeButton" type="button" class="secondary">清除</button>
+            </div>
             <label class="practice-size-control" for="practiceQuestionCountSelect">
               <span>抽題數</span>
               <select id="practiceQuestionCountSelect">
@@ -100,7 +114,7 @@
           </div>
           <h2 id="questionTitle">讀取題庫中...</h2>
           <form id="optionsForm" class="options-list"></form>
-          <p id="feedbackText" class="feedback" aria-live="polite"></p>
+          <div id="feedbackText" class="feedback" aria-live="polite"></div>
         </section>
       </div>
 
@@ -110,10 +124,51 @@
             <p class="eyebrow">本機瀏覽器記錄</p>
             <h2>錯題本</h2>
           </div>
-          <button id="clearWrongBookButton" type="button" class="secondary">清空錯題</button>
+          <div class="wrongbook-actions">
+            <button id="startWrongPracticeButton" type="button" class="primary">錯題練習</button>
+            <button id="clearWrongBookButton" type="button" class="secondary">清空錯題</button>
+          </div>
         </div>
         <div id="wrongBookStats" class="wrongbook-stats"></div>
         <div id="wrongBookList" class="wrongbook-list"></div>
+      </section>
+
+      <section id="questionBankPanel" class="question-bank-panel" hidden>
+        <div class="question-bank-header">
+          <div>
+            <p class="eyebrow">考前瀏覽</p>
+            <h2>題庫</h2>
+          </div>
+          <label class="bank-filter" for="bankCategoryFilter">
+            <span>分類</span>
+            <select id="bankCategoryFilter">
+              <option value="all">全部分類</option>
+            </select>
+          </label>
+        </div>
+        <div id="bankRuleSummary" class="bank-rule-summary"></div>
+        <p id="bankCountText" class="bank-count">共 0 題</p>
+        <div class="bank-navigation" aria-label="題庫分頁">
+          <button id="bankPrevPageButton" type="button" class="secondary">上一頁</button>
+          <span id="bankPageText">第 1 / 1 頁</span>
+          <button id="bankNextPageButton" type="button" class="secondary">下一頁</button>
+        </div>
+        <div id="questionBankList" class="question-bank-list"></div>
+      </section>
+
+      <section id="statsPanel" class="stats-panel" hidden>
+        <div class="stats-header">
+          <div>
+            <p class="eyebrow">本機學習紀錄</p>
+            <h2>統計</h2>
+          </div>
+          <button id="clearStatsButton" type="button" class="secondary">清空統計</button>
+        </div>
+        <div id="statsSummary" class="stats-summary"></div>
+        <h3 class="stats-section-title">分類弱點</h3>
+        <div id="statsCategoryList" class="stats-category-list"></div>
+        <h3 class="stats-section-title">最近紀錄</h3>
+        <div id="recentExamList" class="recent-exam-list"></div>
       </section>
 
       <footer id="quizActions" class="quiz-actions">

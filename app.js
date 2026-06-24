@@ -1,5 +1,8 @@
 const STORAGE_KEY = "amateurRadioQuiz.wrongBook.v1";
+const STATS_KEY = "amateurRadioQuiz.stats.v1";
+const BANK_VIEW_KEY = "amateurRadioQuiz.bankView.v1";
 const EXAM_DURATION_SECONDS = 40 * 60;
+const BANK_PAGE_SIZE = 20;
 
 const EXAM_RULES = {
   totalQuestions: 35,
@@ -23,19 +26,40 @@ const state = {
   answers: {},
   submitted: false,
   remainingSeconds: EXAM_DURATION_SECONDS,
+  sessionStartedAt: 0,
+  endedByTimeout: false,
   timerId: null,
-  wrongRecords: {}
+  wrongRecords: {},
+  statsRecords: { sessions: [], categories: {} },
+  bankCategoryKey: "all",
+  bankPage: 1
 };
 
 const els = {
   examModeButton: document.querySelector("#examModeButton"),
   practiceModeButton: document.querySelector("#practiceModeButton"),
+  bankModeButton: document.querySelector("#bankModeButton"),
   wrongBookModeButton: document.querySelector("#wrongBookModeButton"),
+  statsModeButton: document.querySelector("#statsModeButton"),
   wrongCountBadge: document.querySelector("#wrongCountBadge"),
   examLayout: document.querySelector("#examLayout"),
+  questionBankPanel: document.querySelector("#questionBankPanel"),
+  bankCategoryFilter: document.querySelector("#bankCategoryFilter"),
+  bankRuleSummary: document.querySelector("#bankRuleSummary"),
+  bankCountText: document.querySelector("#bankCountText"),
+  bankPrevPageButton: document.querySelector("#bankPrevPageButton"),
+  bankNextPageButton: document.querySelector("#bankNextPageButton"),
+  bankPageText: document.querySelector("#bankPageText"),
+  questionBankList: document.querySelector("#questionBankList"),
   wrongBookPanel: document.querySelector("#wrongBookPanel"),
+  statsPanel: document.querySelector("#statsPanel"),
+  statsSummary: document.querySelector("#statsSummary"),
+  statsCategoryList: document.querySelector("#statsCategoryList"),
+  recentExamList: document.querySelector("#recentExamList"),
+  clearStatsButton: document.querySelector("#clearStatsButton"),
   wrongBookStats: document.querySelector("#wrongBookStats"),
   wrongBookList: document.querySelector("#wrongBookList"),
+  startWrongPracticeButton: document.querySelector("#startWrongPracticeButton"),
   clearWrongBookButton: document.querySelector("#clearWrongBookButton"),
   quizActions: document.querySelector("#quizActions"),
   progressText: document.querySelector("#progressText"),
@@ -43,6 +67,8 @@ const els = {
   practiceControls: document.querySelector("#practiceControls"),
   practiceCategoryInputs: Array.from(document.querySelectorAll("input[name='practiceCategory']")),
   practiceRangeCount: document.querySelector("#practiceRangeCount"),
+  selectAllPracticeButton: document.querySelector("#selectAllPracticeButton"),
+  clearPracticeButton: document.querySelector("#clearPracticeButton"),
   practiceQuestionCountSelect: document.querySelector("#practiceQuestionCountSelect"),
   totalRuleText: document.querySelector("#totalRuleText"),
   targetRuleLabel: document.querySelector("#targetRuleLabel"),
@@ -84,10 +110,58 @@ function loadWrongRecords() {
   }
 }
 
+function createDefaultStats() {
+  return { sessions: [], categories: {} };
+}
+
+function loadStatsRecords() {
+  const storage = getStorage();
+  if (!storage) return createDefaultStats();
+
+  try {
+    const parsed = JSON.parse(storage.getItem(STATS_KEY) || "null");
+    return {
+      sessions: Array.isArray(parsed?.sessions) ? parsed.sessions : [],
+      categories: parsed?.categories && typeof parsed.categories === "object" ? parsed.categories : {}
+    };
+  } catch {
+    return createDefaultStats();
+  }
+}
+
+function loadBankView() {
+  const storage = getStorage();
+  if (!storage) return;
+
+  try {
+    const parsed = JSON.parse(storage.getItem(BANK_VIEW_KEY) || "null");
+    state.bankCategoryKey = parsed?.categoryKey || "all";
+    state.bankPage = Math.max(1, Number.parseInt(parsed?.page, 10) || 1);
+  } catch {
+    state.bankCategoryKey = "all";
+    state.bankPage = 1;
+  }
+}
+
 function saveWrongRecords() {
   const storage = getStorage();
   if (!storage) return;
   storage.setItem(STORAGE_KEY, JSON.stringify(state.wrongRecords));
+}
+
+function saveBankView() {
+  const storage = getStorage();
+  if (!storage) return;
+  storage.setItem(BANK_VIEW_KEY, JSON.stringify({
+    categoryKey: state.bankCategoryKey,
+    page: state.bankPage
+  }));
+}
+
+function saveStatsRecords() {
+  const storage = getStorage();
+  if (!storage) return;
+  storage.setItem(STATS_KEY, JSON.stringify(state.statsRecords));
 }
 
 function formatDuration(seconds) {
@@ -107,9 +181,15 @@ function stopTimer() {
 }
 
 function finishExam() {
+  finishSession();
+}
+
+function finishSession({ timedOut = false } = {}) {
   if (state.submitted) return;
   updateWrongRecordsFromExam();
+  recordStatsFromSession(timedOut);
   state.submitted = true;
+  state.endedByTimeout = timedOut;
   stopTimer();
   render();
 }
@@ -128,7 +208,7 @@ function startTimer() {
     updateTimerDisplay();
 
     if (state.remainingSeconds === 0) {
-      finishExam();
+      finishSession({ timedOut: true });
     }
   }, 1000);
 }
@@ -143,9 +223,13 @@ function shuffle(items) {
 }
 
 function buildExamQuestions(questionBank) {
+  return buildQuestionsByRules(questionBank, EXAM_RULES.categories);
+}
+
+function buildQuestionsByRules(questionBank, rules) {
   const selected = [];
 
-  for (const rule of EXAM_RULES.categories) {
+  for (const rule of rules) {
     const pool = questionBank.filter((question) => question.categoryKey === rule.key);
     if (pool.length < rule.count) {
       throw new Error(`題庫分類 ${rule.key} 題數不足：需要 ${rule.count} 題，只有 ${pool.length} 題`);
@@ -156,11 +240,14 @@ function buildExamQuestions(questionBank) {
   return shuffle(selected);
 }
 
+function getCategoryQuestionCount(questionBank, categoryKey) {
+  return questionBank.filter((question) => question.categoryKey === categoryKey).length;
+}
+
 function getSelectedPracticeCategoryKeys() {
-  const selected = els.practiceCategoryInputs
+  return els.practiceCategoryInputs
     .filter((input) => input.checked)
     .map((input) => input.value);
-  return selected.length ? selected : EXAM_RULES.categories.map((category) => category.key);
 }
 
 function getPracticePool(questionBank, categoryKeys) {
@@ -168,10 +255,12 @@ function getPracticePool(questionBank, categoryKeys) {
 }
 
 function updatePracticeRangeSummary(poolLength) {
+  const selectedCount = getSelectedPracticeCategoryKeys().length;
+  const totalCount = els.practiceCategoryInputs.length;
   const count = typeof poolLength === "number"
     ? poolLength
     : getPracticePool(state.questionBank, getSelectedPracticeCategoryKeys()).length;
-  els.practiceRangeCount.textContent = `目前範圍：${count} 題`;
+  els.practiceRangeCount.textContent = `已選 ${selectedCount} / ${totalCount} 個範圍，共 ${count} 題`;
 }
 
 function getPracticeQuestionLimit(poolLength) {
@@ -184,6 +273,47 @@ function getPracticeQuestionLimit(poolLength) {
   }
 
   return Math.min(parsedLimit, poolLength);
+}
+
+function getScaledPracticeRules(questionBank, categoryKeys, totalLimit) {
+  if (totalLimit >= getPracticePool(questionBank, categoryKeys).length) {
+    return categoryKeys.map((key) => ({
+      key,
+      count: getCategoryQuestionCount(questionBank, key)
+    }));
+  }
+
+  const selectedRules = EXAM_RULES.categories.filter((category) => categoryKeys.includes(category.key));
+  const ruleTotal = selectedRules.reduce((total, rule) => total + rule.count, 0);
+  let assignedTotal = 0;
+
+  const scaledRules = selectedRules.map((rule) => {
+    const exactCount = (totalLimit * rule.count) / ruleTotal;
+    const poolCount = getCategoryQuestionCount(questionBank, rule.key);
+    const count = Math.min(Math.floor(exactCount), poolCount);
+    assignedTotal += count;
+    return {
+      key: rule.key,
+      count,
+      remainder: exactCount - Math.floor(exactCount),
+      poolCount
+    };
+  });
+
+  let remaining = totalLimit - assignedTotal;
+  while (remaining > 0) {
+    const candidate = [...scaledRules]
+      .filter((rule) => rule.count < rule.poolCount)
+      .sort((a, b) => b.remainder - a.remainder || b.poolCount - a.poolCount)[0];
+    if (!candidate) break;
+    candidate.count += 1;
+    candidate.remainder = 0;
+    remaining -= 1;
+  }
+
+  return scaledRules
+    .filter((rule) => rule.count > 0)
+    .map(({ key, count }) => ({ key, count }));
 }
 
 function buildPracticeQuestions(questionBank, categoryKeys) {
@@ -202,25 +332,54 @@ function buildPracticeQuestions(questionBank, categoryKeys) {
     return buildExamQuestions(questionBank);
   }
 
-  return shuffle(pool).slice(0, practiceQuestionLimit);
+  return buildQuestionsByRules(questionBank, getScaledPracticeRules(questionBank, categoryKeys, practiceQuestionLimit));
 }
 
 function startNewExam(questionBank = state.questionBank) {
   state.questionBank = questionBank;
+  state.mode = "exam";
   state.questions = buildExamQuestions(questionBank);
   state.currentIndex = 0;
   state.answers = {};
   state.submitted = false;
+  state.endedByTimeout = false;
+  state.sessionStartedAt = Date.now();
   startTimer();
 }
 
 function startPractice(questionBank = state.questionBank) {
   state.questionBank = questionBank;
   state.practiceCategoryKeys = getSelectedPracticeCategoryKeys();
-  state.questions = buildPracticeQuestions(questionBank, state.practiceCategoryKeys);
   state.currentIndex = 0;
   state.answers = {};
   state.submitted = false;
+  state.endedByTimeout = false;
+  state.sessionStartedAt = Date.now();
+
+  const pool = getPracticePool(questionBank, state.practiceCategoryKeys);
+  updatePracticeRangeSummary(pool.length);
+
+  if (!state.practiceCategoryKeys.length || !pool.length) {
+    state.questions = [];
+    stopTimer();
+    state.remainingSeconds = EXAM_DURATION_SECONDS;
+    updateTimerDisplay();
+    return;
+  }
+
+  state.questions = buildPracticeQuestions(questionBank, state.practiceCategoryKeys);
+  startTimer();
+}
+
+function startWrongPractice() {
+  const entries = getWrongEntries();
+  state.mode = "wrongPractice";
+  state.questions = shuffle(entries.map((entry) => entry.question));
+  state.currentIndex = 0;
+  state.answers = {};
+  state.submitted = false;
+  state.endedByTimeout = false;
+  state.sessionStartedAt = Date.now();
   startTimer();
 }
 
@@ -248,6 +407,12 @@ function getExamResult() {
   };
 }
 
+function getSessionLabel(mode = state.mode) {
+  if (mode === "practice") return "題庫練習";
+  if (mode === "wrongPractice") return "錯題練習";
+  return "模擬考";
+}
+
 function getAnswerText(question, key = question.answer) {
   const option = question.options.find((item) => item.key === key);
   return option ? `(${option.key}) ${option.text}` : key;
@@ -258,6 +423,110 @@ function getExplanationText(question) {
   return explanation ? `解析：${explanation}` : "解析：尚未提供";
 }
 
+function resetFeedback(tone = "") {
+  els.feedbackText.className = tone ? `feedback ${tone}` : "feedback";
+  els.feedbackText.innerHTML = "";
+}
+
+function setFeedbackText(text, tone = "") {
+  resetFeedback(tone);
+  els.feedbackText.textContent = text;
+}
+
+function appendFeedbackContent(content, contentText) {
+  if (!Array.isArray(contentText)) {
+    content.textContent = contentText;
+    return;
+  }
+
+  for (const part of contentText) {
+    const item = document.createElement("span");
+    item.className = part.className ? `feedback-content-part ${part.className}` : "feedback-content-part";
+    item.textContent = part.text;
+    content.append(item);
+  }
+}
+
+function createFeedbackRow(labelText, contentText, rowClass) {
+  const row = document.createElement("div");
+  row.className = `feedback-row ${rowClass}`;
+
+  const label = document.createElement("span");
+  label.className = "feedback-label";
+  label.textContent = labelText;
+
+  const content = document.createElement("span");
+  content.className = "feedback-content";
+  appendFeedbackContent(content, contentText);
+
+  row.append(label, content);
+  return row;
+}
+
+function setFeedbackDetails(mainText, explanationText, tone, summaryText = "") {
+  resetFeedback(tone);
+
+  els.feedbackText.append(createFeedbackRow("答案", mainText, "feedback-answer"));
+  els.feedbackText.append(createFeedbackRow("解析", explanationText, "feedback-explanation"));
+
+  if (summaryText) {
+    els.feedbackText.append(createFeedbackRow("結果", summaryText, "feedback-summary"));
+  }
+}
+
+function buildAnswerFeedbackParts(statusText, selectedAnswerText, correctAnswerText) {
+  const parts = [{ text: statusText }];
+
+  if (selectedAnswerText) {
+    parts.push({ text: selectedAnswerText, className: "feedback-selected-answer" });
+  }
+
+  parts.push({ text: correctAnswerText, className: "feedback-correct-answer" });
+  return parts;
+}
+
+function recordStatsFromSession(timedOut) {
+  if (!state.questions.length) return;
+
+  const result = getExamResult();
+  const answered = getAnsweredCount();
+  const durationSeconds = state.sessionStartedAt
+    ? Math.max(0, Math.round((Date.now() - state.sessionStartedAt) / 1000))
+    : 0;
+
+  state.statsRecords.sessions.unshift({
+    id: `${Date.now()}`,
+    mode: state.mode,
+    label: getSessionLabel(),
+    date: new Date().toISOString(),
+    score: result.score,
+    wrong: result.wrong,
+    answered,
+    total: result.total,
+    passed: result.passed,
+    durationSeconds,
+    timedOut
+  });
+  state.statsRecords.sessions = state.statsRecords.sessions.slice(0, 20);
+
+  for (const question of state.questions) {
+    const selected = state.answers[question.id] || "";
+    const category = state.statsRecords.categories[question.categoryKey] || {
+      key: question.categoryKey,
+      name: question.category,
+      answered: 0,
+      correct: 0,
+      wrong: 0
+    };
+    category.answered += selected ? 1 : 0;
+    category.correct += selected === question.answer ? 1 : 0;
+    category.wrong += selected === question.answer ? 0 : 1;
+    state.statsRecords.categories[question.categoryKey] = category;
+  }
+
+  saveStatsRecords();
+}
+
 function getWrongEntries() {
   return Object.values(state.wrongRecords)
     .map((record) => {
@@ -265,7 +534,11 @@ function getWrongEntries() {
       return question ? { record, question } : null;
     })
     .filter(Boolean)
-    .sort((a, b) => (b.record.lastWrongAt || "").localeCompare(a.record.lastWrongAt || ""));
+    .sort((a, b) => {
+      const aSort = a.record.firstWrongAt || a.record.lastWrongAt || "";
+      const bSort = b.record.firstWrongAt || b.record.lastWrongAt || "";
+      return bSort.localeCompare(aSort);
+    });
 }
 
 function updateWrongBookBadge() {
@@ -283,6 +556,7 @@ function updateWrongRecord(question, selected) {
   }
 
   const previous = state.wrongRecords[question.id];
+  const now = new Date().toISOString();
   state.wrongRecords[question.id] = {
     id: question.id,
     category: question.category,
@@ -290,7 +564,8 @@ function updateWrongRecord(question, selected) {
     number: question.number,
     wrongCount: (previous?.wrongCount || 0) + 1,
     lastAnswer: selected,
-    lastWrongAt: new Date().toISOString()
+    firstWrongAt: previous?.firstWrongAt || previous?.lastWrongAt || now,
+    lastWrongAt: now
   };
 }
 
@@ -307,18 +582,26 @@ function updateWrongRecordsFromExam() {
 function setMode(mode) {
   state.mode = mode;
   const isWrongBook = mode === "wrongBook";
+  const isStats = mode === "stats";
+  const isBank = mode === "bank";
   const isPractice = mode === "practice";
 
-  els.examLayout.hidden = isWrongBook;
-  els.quizActions.hidden = isWrongBook;
+  els.examLayout.hidden = isWrongBook || isStats || isBank;
+  els.quizActions.hidden = isWrongBook || isStats || isBank;
   els.wrongBookPanel.hidden = !isWrongBook;
+  els.statsPanel.hidden = !isStats;
+  els.questionBankPanel.hidden = !isBank;
   els.practiceControls.hidden = !isPractice;
   els.examModeButton.className = mode === "exam" ? "mode-tab active" : "mode-tab";
   els.practiceModeButton.className = isPractice ? "mode-tab active" : "mode-tab";
+  els.bankModeButton.className = isBank ? "mode-tab active" : "mode-tab";
   els.wrongBookModeButton.className = isWrongBook ? "mode-tab active" : "mode-tab";
+  els.statsModeButton.className = isStats ? "mode-tab active" : "mode-tab";
   els.examModeButton.setAttribute("aria-current", mode === "exam" ? "page" : "false");
   els.practiceModeButton.setAttribute("aria-current", isPractice ? "page" : "false");
+  els.bankModeButton.setAttribute("aria-current", isBank ? "page" : "false");
   els.wrongBookModeButton.setAttribute("aria-current", isWrongBook ? "page" : "false");
+  els.statsModeButton.setAttribute("aria-current", isStats ? "page" : "false");
 
   if (mode === "exam") {
     startNewExam();
@@ -326,19 +609,26 @@ function setMode(mode) {
   } else if (isPractice) {
     startPractice();
     render();
-  } else {
+  } else if (isWrongBook) {
     stopTimer();
     renderWrongBook();
+  } else if (isBank) {
+    stopTimer();
+    renderQuestionBank();
+  } else {
+    stopTimer();
+    renderStats();
   }
 }
 
 function updateProgress() {
   const total = state.questions.length;
   const answered = getAnsweredCount();
+  const fallbackTotal = state.mode === "practice" ? 0 : EXAM_RULES.totalQuestions;
   els.progressText.textContent = total ? `第 ${state.currentIndex + 1} 題` : "尚無題目";
-  els.answeredText.textContent = `${answered} / ${total || EXAM_RULES.totalQuestions}`;
+  els.answeredText.textContent = `${answered} / ${total || fallbackTotal}`;
   els.progressFill.style.width = total ? `${Math.round((answered / total) * 100)}%` : "0%";
-  els.totalRuleText.textContent = String(total || EXAM_RULES.totalQuestions);
+  els.totalRuleText.textContent = String(total || fallbackTotal);
   els.targetRuleLabel.textContent = "及格";
   els.targetRuleText.textContent = String(EXAM_RULES.passingScore);
   els.timerRuleLabel.textContent = "倒數";
@@ -355,18 +645,18 @@ function updateProgress() {
   els.scoreText.textContent = `答對 ${result.score}｜答錯 ${result.wrong}｜${resultText}`;
   els.resultPanel.hidden = false;
   els.resultPanel.className = `result-panel ${result.passed ? "pass" : "fail"}`;
-  els.resultLabel.textContent = "交卷結果";
+  els.resultLabel.textContent = state.endedByTimeout ? "時間到自動交卷" : "交卷結果";
   els.resultScore.textContent = `答對 ${result.score} 題 / 答錯 ${result.wrong} 題 / ${resultText}`;
-  els.resultDetail.textContent = `及格門檻 ${EXAM_RULES.passingScore} 題，已作答 ${answered} 題，未作答 ${result.total - answered} 題。錯題已更新至本機錯題本。`;
+  els.resultDetail.textContent = `${state.endedByTimeout ? "時間到，系統已自動交卷。" : ""}及格門檻 ${EXAM_RULES.passingScore} 題，已作答 ${answered} 題，未作答 ${result.total - answered} 題。錯題已更新至本機錯題本，統計已更新。`;
 }
 
 function renderFeedback(question) {
   const selected = state.answers[question.id];
-  els.feedbackText.className = "feedback";
+  resetFeedback();
 
-  if (state.mode === "practice") {
+  if (state.mode === "practice" || state.mode === "wrongPractice") {
     if (!selected) {
-      els.feedbackText.textContent = "選擇答案後立即顯示正解與解析";
+      setFeedbackText("選擇答案後立即顯示正解與解析");
       return;
     }
 
@@ -374,17 +664,15 @@ function renderFeedback(question) {
     const explanationText = getExplanationText(question);
 
     if (selected === question.answer) {
-      els.feedbackText.textContent = `答對，正解為 ${answerText}。${explanationText}`;
-      els.feedbackText.classList.add("success");
+      setFeedbackDetails(buildAnswerFeedbackParts("答對，正解為", "", answerText), explanationText, "success");
     } else {
-      els.feedbackText.textContent = `答錯，你選 ${getAnswerText(question, selected)}，正解為 ${answerText}。${explanationText}`;
-      els.feedbackText.classList.add("danger");
+      setFeedbackDetails(buildAnswerFeedbackParts("答錯，你選", getAnswerText(question, selected), `正解為 ${answerText}`), explanationText, "danger");
     }
     return;
   }
 
   if (!state.submitted) {
-    els.feedbackText.textContent = selected ? "已作答" : "尚未作答";
+    setFeedbackText(selected ? "已作答" : "尚未作答");
     return;
   }
 
@@ -394,17 +682,14 @@ function renderFeedback(question) {
   const explanationText = getExplanationText(question);
 
   if (!selected) {
-    els.feedbackText.textContent = `未作答，正解為 ${answerText}。${explanationText}。${summary}`;
-    els.feedbackText.classList.add("danger");
+    setFeedbackDetails(buildAnswerFeedbackParts("未作答，", "", `正解為 ${answerText}`), explanationText, "danger", summary);
     return;
   }
 
   if (selected === question.answer) {
-    els.feedbackText.textContent = `本題答對，正解為 ${answerText}。${explanationText}。${summary}`;
-    els.feedbackText.classList.add("success");
+    setFeedbackDetails(buildAnswerFeedbackParts("本題答對，正解為", "", answerText), explanationText, "success", summary);
   } else {
-    els.feedbackText.textContent = `本題答錯，你選 ${getAnswerText(question, selected)}，正解為 ${answerText}。${explanationText}。${summary}`;
-    els.feedbackText.classList.add("danger");
+    setFeedbackDetails(buildAnswerFeedbackParts("本題答錯，你選", getAnswerText(question, selected), `正解為 ${answerText}`), explanationText, "danger", summary);
   }
 }
 
@@ -442,13 +727,14 @@ function renderOptions(question) {
 }
 
 function render() {
-  if (state.mode === "wrongBook") return;
+  if (state.mode === "wrongBook" || state.mode === "stats" || state.mode === "bank") return;
   const question = currentQuestion();
 
   if (!question) {
-    els.questionTitle.textContent = "找不到題庫資料";
+    els.questionTitle.textContent = state.mode === "practice" ? "請至少選擇一個練習範圍" : "找不到題庫資料";
     els.categoryText.textContent = "-";
     els.optionsForm.innerHTML = "";
+    setFeedbackText(state.mode === "practice" ? "可按全選恢復全部範圍，或勾選想練習的分類。" : "");
     updateProgress();
     return;
   }
@@ -516,7 +802,7 @@ function renderWrongBookItem(entry) {
   for (const text of [
     question.category,
     `題號 ${question.number}`,
-    `錯誤 ${record.wrongCount} 次`,
+    `累計錯誤 ${record.wrongCount} 次`,
     record.lastAnswer ? `上次選 ${record.lastAnswer}` : "上次未作答"
   ]) {
     const badge = document.createElement("span");
@@ -544,6 +830,7 @@ function renderWrongBookItem(entry) {
 function renderWrongBook() {
   const entries = getWrongEntries();
   els.scoreText.textContent = `錯題 ${entries.length} 題`;
+  els.startWrongPracticeButton.disabled = entries.length === 0;
   renderWrongBookStats(entries);
   els.wrongBookList.innerHTML = "";
 
@@ -560,9 +847,218 @@ function renderWrongBook() {
   });
 }
 
+function setupQuestionBankFilter() {
+  const currentValue = state.bankCategoryKey || "all";
+  els.bankCategoryFilter.innerHTML = '<option value="all">全部分類</option>';
+
+  for (const category of EXAM_RULES.categories) {
+    const sampleQuestion = state.questionBank.find((question) => question.categoryKey === category.key);
+    if (!sampleQuestion) continue;
+
+    const option = document.createElement("option");
+    option.value = category.key;
+    const bankCount = getCategoryQuestionCount(state.questionBank, category.key);
+    option.textContent = `${sampleQuestion.category}（${bankCount} 題）`;
+    els.bankCategoryFilter.append(option);
+  }
+
+  els.bankCategoryFilter.value = [...els.bankCategoryFilter.options].some((option) => option.value === currentValue)
+    ? currentValue
+    : "all";
+  state.bankCategoryKey = els.bankCategoryFilter.value;
+}
+
+function renderBankRuleSummary() {
+  els.bankRuleSummary.innerHTML = "";
+
+  const note = document.createElement("p");
+  note.className = "bank-rule-note";
+  note.textContent = `本測試題庫共分 ${EXAM_RULES.categories.length} 部分；模擬考固定抽 ${EXAM_RULES.totalQuestions} 題，依官方題組比例抽題。`;
+  els.bankRuleSummary.append(note);
+
+  const grid = document.createElement("div");
+  grid.className = "bank-rule-grid";
+
+  for (const rule of EXAM_RULES.categories) {
+    const sampleQuestion = state.questionBank.find((question) => question.categoryKey === rule.key);
+    if (!sampleQuestion) continue;
+
+    const card = document.createElement("article");
+    card.className = "bank-rule-card";
+    card.innerHTML = `
+      <strong>${sampleQuestion.category}</strong>
+      <dl>
+        <div>
+          <dt>題庫</dt>
+          <dd>${getCategoryQuestionCount(state.questionBank, rule.key)}</dd>
+        </div>
+        <div>
+          <dt>抽題</dt>
+          <dd>${rule.count}</dd>
+        </div>
+      </dl>
+    `;
+    grid.append(card);
+  }
+
+  els.bankRuleSummary.append(grid);
+}
+
+function renderQuestionBank() {
+  setupQuestionBankFilter();
+  renderBankRuleSummary();
+  const selectedCategory = state.bankCategoryKey;
+  const questions = selectedCategory === "all"
+    ? state.questionBank
+    : state.questionBank.filter((question) => question.categoryKey === selectedCategory);
+  const totalPages = Math.max(1, Math.ceil(questions.length / BANK_PAGE_SIZE));
+  state.bankPage = Math.min(Math.max(1, state.bankPage), totalPages);
+  const startIndex = (state.bankPage - 1) * BANK_PAGE_SIZE;
+  const visibleQuestions = questions.slice(startIndex, startIndex + BANK_PAGE_SIZE);
+
+  els.scoreText.textContent = `題庫 ${questions.length} 題`;
+  els.bankCountText.textContent = `共 ${questions.length} 題，目前顯示第 ${startIndex + 1} - ${Math.min(startIndex + BANK_PAGE_SIZE, questions.length)} 題`;
+  els.bankPageText.textContent = `第 ${state.bankPage} / ${totalPages} 頁`;
+  els.bankPrevPageButton.disabled = state.bankPage <= 1;
+  els.bankNextPageButton.disabled = state.bankPage >= totalPages;
+  els.questionBankList.innerHTML = "";
+  saveBankView();
+
+  if (!questions.length) {
+    const empty = document.createElement("p");
+    empty.className = "stats-empty";
+    empty.textContent = "找不到符合分類的題目。";
+    els.questionBankList.append(empty);
+    return;
+  }
+
+  for (const question of visibleQuestions) {
+    const item = document.createElement("article");
+    item.className = "question-bank-item";
+
+    const meta = document.createElement("div");
+    meta.className = "question-bank-meta";
+    for (const text of [question.category, `題號 ${question.number}`]) {
+      const badge = document.createElement("span");
+      badge.textContent = text;
+      meta.append(badge);
+    }
+
+    const title = document.createElement("h3");
+    title.textContent = question.question;
+
+    const options = document.createElement("ul");
+    options.className = "question-bank-options";
+    for (const option of question.options) {
+      const optionItem = document.createElement("li");
+      if (option.key === question.answer) optionItem.className = "correct";
+      optionItem.textContent = `(${option.key}) ${option.text}`;
+      options.append(optionItem);
+    }
+
+    const answer = document.createElement("span");
+    answer.className = "question-bank-answer";
+    answer.textContent = `正解 ${getAnswerText(question)}`;
+
+    item.append(meta, title, options, answer);
+    els.questionBankList.append(item);
+  }
+}
+
+function renderStats() {
+  const sessions = state.statsRecords.sessions || [];
+  const totalSessions = sessions.length;
+  const examSessions = sessions.filter((session) => session.mode === "exam");
+  const passedSessions = examSessions.filter((session) => session.passed).length;
+  const totalAnswered = sessions.reduce((sum, session) => sum + session.answered, 0);
+  const totalCorrect = sessions.reduce((sum, session) => sum + session.score, 0);
+  const accuracy = totalAnswered ? Math.round((totalCorrect / totalAnswered) * 100) : 0;
+  const passRate = examSessions.length ? Math.round((passedSessions / examSessions.length) * 100) : 0;
+
+  els.scoreText.textContent = `累積 ${totalAnswered} 題｜答對率 ${accuracy}%`;
+  els.statsSummary.innerHTML = "";
+
+  for (const [label, value] of [
+    ["累積作答", `${totalAnswered} 題`],
+    ["答對率", `${accuracy}%`],
+    ["模擬考次數", `${examSessions.length} 次`],
+    ["合格率", `${passRate}%`]
+  ]) {
+    const card = document.createElement("div");
+    card.className = "stats-card";
+    card.innerHTML = `<span>${label}</span><strong>${value}</strong>`;
+    els.statsSummary.append(card);
+  }
+
+  renderStatsCategories();
+  renderRecentSessions();
+
+  if (!totalSessions) {
+    els.recentExamList.innerHTML = '<p class="stats-empty">尚無作答紀錄。完成一次交卷後，統計會顯示在這裡。</p>';
+  }
+}
+
+function renderStatsCategories() {
+  els.statsCategoryList.innerHTML = "";
+  const categories = Object.values(state.statsRecords.categories || {})
+    .sort((a, b) => (b.wrong || 0) - (a.wrong || 0));
+
+  if (!categories.length) {
+    els.statsCategoryList.innerHTML = '<p class="stats-empty">尚無分類統計。</p>';
+    return;
+  }
+
+  for (const category of categories) {
+    const answered = category.answered || 0;
+    const correct = category.correct || 0;
+    const wrong = category.wrong || 0;
+    const accuracy = answered ? Math.round((correct / answered) * 100) : 0;
+    const item = document.createElement("article");
+    item.className = "stats-category-item";
+    item.innerHTML = `
+      <strong>${category.name}</strong>
+      <div class="stats-category-meta">
+        <span class="stats-pill">作答 ${answered} 題</span>
+        <span class="stats-pill">答對率 ${accuracy}%</span>
+        <span class="stats-pill">錯題 ${wrong} 題</span>
+      </div>
+    `;
+    els.statsCategoryList.append(item);
+  }
+}
+
+function renderRecentSessions() {
+  els.recentExamList.innerHTML = "";
+  const sessions = (state.statsRecords.sessions || []).slice(0, 5);
+
+  for (const session of sessions) {
+    const item = document.createElement("article");
+    item.className = "recent-exam-item";
+    const date = new Date(session.date).toLocaleString("zh-TW", {
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+    const resultText = session.passed ? "合格" : "未合格";
+    item.innerHTML = `
+      <strong>${date}｜${session.label}</strong>
+      <div class="recent-exam-meta">
+        <span class="stats-pill">答對 ${session.score} 題</span>
+        <span class="stats-pill">答錯 ${session.wrong} 題</span>
+        <span class="stats-pill">${resultText}</span>
+        ${session.timedOut ? '<span class="stats-pill">時間到</span>' : ""}
+      </div>
+    `;
+    els.recentExamList.append(item);
+  }
+}
+
 async function loadQuestions() {
   try {
     state.wrongRecords = loadWrongRecords();
+    state.statsRecords = loadStatsRecords();
+    loadBankView();
     const response = await fetch("data/amateurRadioLevel3.generated.json");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const quiz = await response.json();
@@ -571,14 +1067,16 @@ async function loadQuestions() {
     render();
   } catch (error) {
     els.questionTitle.textContent = "題庫讀取失敗";
-    els.feedbackText.textContent = "請確認是透過本機伺服器開啟，而不是直接開啟 HTML 檔。";
+    setFeedbackText("請確認是透過本機伺服器開啟，而不是直接開啟 HTML 檔。");
     console.error(error);
   }
 }
 
 els.examModeButton.addEventListener("click", () => setMode("exam"));
 els.practiceModeButton.addEventListener("click", () => setMode("practice"));
+els.bankModeButton.addEventListener("click", () => setMode("bank"));
 els.wrongBookModeButton.addEventListener("click", () => setMode("wrongBook"));
+els.statsModeButton.addEventListener("click", () => setMode("stats"));
 
 els.practiceCategoryInputs.forEach((input) => {
   input.addEventListener("change", () => {
@@ -586,6 +1084,24 @@ els.practiceCategoryInputs.forEach((input) => {
     startPractice();
     render();
   });
+});
+
+els.selectAllPracticeButton.addEventListener("click", () => {
+  els.practiceCategoryInputs.forEach((input) => {
+    input.checked = true;
+  });
+  if (state.mode !== "practice") return;
+  startPractice();
+  render();
+});
+
+els.clearPracticeButton.addEventListener("click", () => {
+  els.practiceCategoryInputs.forEach((input) => {
+    input.checked = false;
+  });
+  if (state.mode !== "practice") return;
+  startPractice();
+  render();
 });
 
 els.practiceQuestionCountSelect.addEventListener("change", () => {
@@ -602,6 +1118,48 @@ els.clearWrongBookButton.addEventListener("click", () => {
   renderWrongBook();
 });
 
+els.startWrongPracticeButton.addEventListener("click", () => {
+  if (!getWrongEntries().length) return;
+  els.examLayout.hidden = false;
+  els.quizActions.hidden = false;
+  els.wrongBookPanel.hidden = true;
+  els.statsPanel.hidden = true;
+  els.practiceControls.hidden = true;
+  els.examModeButton.className = "mode-tab";
+  els.practiceModeButton.className = "mode-tab";
+  els.bankModeButton.className = "mode-tab";
+  els.wrongBookModeButton.className = "mode-tab active";
+  els.statsModeButton.className = "mode-tab";
+  startWrongPractice();
+  render();
+});
+
+els.bankCategoryFilter.addEventListener("change", () => {
+  if (state.mode !== "bank") return;
+  state.bankCategoryKey = els.bankCategoryFilter.value;
+  state.bankPage = 1;
+  renderQuestionBank();
+});
+
+els.bankPrevPageButton.addEventListener("click", () => {
+  if (state.mode !== "bank") return;
+  state.bankPage = Math.max(1, state.bankPage - 1);
+  renderQuestionBank();
+});
+
+els.bankNextPageButton.addEventListener("click", () => {
+  if (state.mode !== "bank") return;
+  state.bankPage += 1;
+  renderQuestionBank();
+});
+
+els.clearStatsButton.addEventListener("click", () => {
+  if (window.confirm && !window.confirm("確定要清空本機統計？錯題本不會被清除。")) return;
+  state.statsRecords = createDefaultStats();
+  saveStatsRecords();
+  renderStats();
+});
+
 els.prevButton.addEventListener("click", () => {
   state.currentIndex = Math.max(0, state.currentIndex - 1);
   render();
@@ -613,7 +1171,7 @@ els.nextButton.addEventListener("click", () => {
 });
 
 els.submitButton.addEventListener("click", () => {
-  finishExam();
+  finishSession();
 });
 
 els.resetButton.addEventListener("click", () => {
