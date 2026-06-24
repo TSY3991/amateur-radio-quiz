@@ -79,7 +79,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "業餘無線電法規的核心目的，是讓合格人員在規範下進行通訊、技術研究與自我訓練，因此重點在提升無線電通訊與技術。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-002",
@@ -108,7 +109,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "我國通訊傳播與無線電頻率、電臺等管理事項，主管機關為國家通訊傳播委員會，因此業餘無線電法規由 NCC 負責。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-003",
@@ -137,7 +139,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "業餘無線電人員資格、操作與電臺管理，主要規範在「業餘無線電人員及電臺管理辦法」，不是一般專用或實驗研發電信網路規範。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-004",
@@ -166,7 +169,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "業餘無線電強調技術研究、自我訓練及與國內外同好通訊交流；提供廉價救災通訊或軍事訓練並非其主要法規目的。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-005",
@@ -195,7 +199,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "中繼電臺需要避免頻率互相干擾，因此收發頻道與相關設定通常由頻率協調員提出協調建議。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-006",
@@ -224,7 +229,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "頻率協調員與中繼電臺運作密切相關，題庫正解指出由其電臺具備中繼電臺資格的本地或地區業餘無線電人員遴選。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-007",
@@ -253,7 +259,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "業餘無線電臺是指在業餘無線電業務中，用來傳送無線電通信的設備與電臺；重點是業餘無線電通信用途，不是單純建築物或娛樂設備。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-008",
@@ -282,7 +289,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "業餘無線電允許的用途包含無線電試驗、技術訓練與同好交流；傳送音樂影像、收費代傳訊息或營利用通訊都不符合業餘無線電用途。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-009",
@@ -311,7 +319,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "ITU 是聯合國體系內負責資訊與通訊技術、國際電信協調等事務的專門機構，不是 NCC 的部門或單一國家的機構。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-010",
@@ -340,7 +349,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "6 公尺波段約位於 50 MHz 附近；四個選項中，50.05 MHz 落在 6 公尺波段內。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-011",
