@@ -427,7 +427,7 @@ function getAnswerText(question, key = question.answer) {
 
 function getExplanationText(question) {
   const explanation = (question.explanation || "").trim();
-  return explanation ? `解析：${explanation}` : "解析：本題解析待補，未以 AI 推論補充。";
+  return explanation ? `解析：${explanation}` : "解析待補";
 }
 
 function getAnalysisStatusText(question) {
@@ -492,12 +492,8 @@ function setFeedbackDetails(mainText, explanationText, tone, summaryText = "", a
   }
 }
 
-function buildAnswerFeedbackParts(statusText, selectedAnswerText, correctAnswerText) {
+function buildAnswerFeedbackParts(statusText, correctAnswerText) {
   const parts = [{ text: statusText }];
-
-  if (selectedAnswerText) {
-    parts.push({ text: selectedAnswerText, className: "feedback-selected-answer" });
-  }
 
   parts.push({ text: correctAnswerText, className: "feedback-correct-answer" });
   return parts;
@@ -683,9 +679,9 @@ function renderFeedback(question) {
     const analysisStatusText = getAnalysisStatusText(question);
 
     if (selected === question.answer) {
-      setFeedbackDetails(buildAnswerFeedbackParts("答對，正解為", "", answerText), explanationText, "success", "", analysisStatusText);
+      setFeedbackDetails(buildAnswerFeedbackParts("答對。正確答案：", answerText), explanationText, "success", "", analysisStatusText);
     } else {
-      setFeedbackDetails(buildAnswerFeedbackParts("答錯，你選", getAnswerText(question, selected), `正解為 ${answerText}`), explanationText, "danger", "", analysisStatusText);
+      setFeedbackDetails(buildAnswerFeedbackParts("答錯。正確答案：", answerText), explanationText, "danger", "", analysisStatusText);
     }
     return;
   }
@@ -702,14 +698,14 @@ function renderFeedback(question) {
   const analysisStatusText = getAnalysisStatusText(question);
 
   if (!selected) {
-    setFeedbackDetails(buildAnswerFeedbackParts("未作答，", "", `正解為 ${answerText}`), explanationText, "danger", summary, analysisStatusText);
+    setFeedbackDetails(buildAnswerFeedbackParts("未作答。正確答案：", answerText), explanationText, "danger", summary, analysisStatusText);
     return;
   }
 
   if (selected === question.answer) {
-    setFeedbackDetails(buildAnswerFeedbackParts("本題答對，正解為", "", answerText), explanationText, "success", summary, analysisStatusText);
+    setFeedbackDetails(buildAnswerFeedbackParts("本題答對。正確答案：", answerText), explanationText, "success", summary, analysisStatusText);
   } else {
-    setFeedbackDetails(buildAnswerFeedbackParts("本題答錯，你選", getAnswerText(question, selected), `正解為 ${answerText}`), explanationText, "danger", summary, analysisStatusText);
+    setFeedbackDetails(buildAnswerFeedbackParts("本題答錯。正確答案：", answerText), explanationText, "danger", summary, analysisStatusText);
   }
 }
 
@@ -963,16 +959,11 @@ function renderQuestionBank() {
     options.className = "question-bank-options";
     for (const option of question.options) {
       const optionItem = document.createElement("li");
-      if (option.key === question.answer) optionItem.className = "correct";
       optionItem.textContent = `(${option.key}) ${option.text}`;
       options.append(optionItem);
     }
 
-    const answer = document.createElement("span");
-    answer.className = "question-bank-answer";
-    answer.textContent = `正解 ${getAnswerText(question)}`;
-
-    item.append(meta, title, options, answer);
+    item.append(meta, title, options);
     els.questionBankList.append(item);
   }
 }
