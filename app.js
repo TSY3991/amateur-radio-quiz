@@ -37,7 +37,7 @@ const state = {
   endedByTimeout: false,
   timerId: null,
   wrongRecords: {},
-  statsRecords: { sessions: [], categories: {} },
+  statsRecords: { sessions: [], categories: {}, questions: {} },
   bankCategoryKey: "all",
   bankPage: 1
 };
@@ -89,6 +89,7 @@ const els = {
   resultScore: document.querySelector("#resultScore"),
   resultDetail: document.querySelector("#resultDetail"),
   categoryText: document.querySelector("#categoryText"),
+  historyRiskText: document.querySelector("#historyRiskText"),
   questionTitle: document.querySelector("#questionTitle"),
   optionsForm: document.querySelector("#optionsForm"),
   feedbackText: document.querySelector("#feedbackText"),
@@ -118,7 +119,7 @@ function loadWrongRecords() {
 }
 
 function createDefaultStats() {
-  return { sessions: [], categories: {} };
+  return { sessions: [], categories: {}, questions: {} };
 }
 
 function loadStatsRecords() {
@@ -129,7 +130,8 @@ function loadStatsRecords() {
     const parsed = JSON.parse(storage.getItem(STATS_KEY) || "null");
     return {
       sessions: Array.isArray(parsed?.sessions) ? parsed.sessions : [],
-      categories: parsed?.categories && typeof parsed.categories === "object" ? parsed.categories : {}
+      categories: parsed?.categories && typeof parsed.categories === "object" ? parsed.categories : {},
+      questions: parsed?.questions && typeof parsed.questions === "object" ? parsed.questions : {}
     };
   } catch {
     return createDefaultStats();
@@ -194,11 +196,19 @@ function finishExam() {
 function finishSession({ timedOut = false } = {}) {
   if (state.submitted) return;
   updateWrongRecordsFromExam();
-  recordStatsFromSession(timedOut);
+  const session = recordStatsFromSession(timedOut);
   state.submitted = true;
   state.endedByTimeout = timedOut;
   stopTimer();
   render();
+
+  if (session && (state.mode === "practice" || state.mode === "wrongPractice") && els.resultPanel.scrollIntoView) {
+    const scrollToResult = () => {
+      els.resultPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+    if (typeof window.requestAnimationFrame === "function") window.requestAnimationFrame(scrollToResult);
+    else scrollToResult();
+  }
 }
 
 function startTimer() {
@@ -378,8 +388,8 @@ function startPractice(questionBank = state.questionBank) {
   startTimer();
 }
 
-function startWrongPractice() {
-  const entries = getWrongEntries();
+function startWrongPractice(questionIds = null) {
+  const entries = Array.isArray(questionIds) ? getWrongEntriesByIds(questionIds) : getWrongEntries();
   state.mode = "wrongPractice";
   state.questions = shuffle(entries.map((entry) => entry.question));
   state.currentIndex = 0;
@@ -388,6 +398,24 @@ function startWrongPractice() {
   state.endedByTimeout = false;
   state.sessionStartedAt = Date.now();
   startTimer();
+}
+
+function showWrongPractice(questionIds = null) {
+  const entries = Array.isArray(questionIds) ? getWrongEntriesByIds(questionIds) : getWrongEntries();
+  if (!entries.length) return;
+  els.examLayout.hidden = false;
+  els.quizActions.hidden = false;
+  els.wrongBookPanel.hidden = true;
+  els.statsPanel.hidden = true;
+  els.questionBankPanel.hidden = true;
+  els.practiceControls.hidden = true;
+  els.examModeButton.className = "mode-tab";
+  els.practiceModeButton.className = "mode-tab";
+  els.bankModeButton.className = "mode-tab";
+  els.wrongBookModeButton.className = "mode-tab active";
+  els.statsModeButton.className = "mode-tab";
+  startWrongPractice(questionIds);
+  render();
 }
 
 function currentQuestion() {
@@ -509,8 +537,12 @@ function recordStatsFromSession(timedOut) {
   const durationSeconds = state.sessionStartedAt
     ? Math.max(0, Math.round((Date.now() - state.sessionStartedAt) / 1000))
     : 0;
+  const questionIds = state.questions.map((question) => question.id);
+  const wrongIds = state.questions
+    .filter((question) => state.answers[question.id] !== question.answer)
+    .map((question) => question.id);
 
-  state.statsRecords.sessions.unshift({
+  const session = {
     id: `${Date.now()}`,
     mode: state.mode,
     label: getSessionLabel(),
@@ -521,9 +553,15 @@ function recordStatsFromSession(timedOut) {
     total: result.total,
     passed: result.passed,
     durationSeconds,
-    timedOut
-  });
-  state.statsRecords.sessions = state.statsRecords.sessions.slice(0, 20);
+    timedOut,
+    questionIds,
+    wrongIds,
+    wrongCount: wrongIds.length
+  };
+
+  state.statsRecords.sessions.unshift(session);
+  state.statsRecords.sessions = state.statsRecords.sessions.slice(0, 50);
+  state.statsRecords.questions = state.statsRecords.questions || {};
 
   for (const question of state.questions) {
     const selected = state.answers[question.id] || "";
@@ -538,9 +576,26 @@ function recordStatsFromSession(timedOut) {
     category.correct += selected === question.answer ? 1 : 0;
     category.wrong += selected === question.answer ? 0 : 1;
     state.statsRecords.categories[question.categoryKey] = category;
+
+    const questionStats = state.statsRecords.questions[question.id] || {
+      id: question.id,
+      category: question.category,
+      categoryKey: question.categoryKey,
+      number: question.number,
+      attempts: 0,
+      correct: 0,
+      wrong: 0
+    };
+    questionStats.attempts += 1;
+    questionStats.correct += selected === question.answer ? 1 : 0;
+    questionStats.wrong += selected === question.answer ? 0 : 1;
+    questionStats.lastSeenAt = session.date;
+    if (selected !== question.answer) questionStats.lastWrongAt = session.date;
+    state.statsRecords.questions[question.id] = questionStats;
   }
 
   saveStatsRecords();
+  return session;
 }
 
 function getWrongEntries() {
@@ -557,11 +612,55 @@ function getWrongEntries() {
     });
 }
 
+function getWrongEntriesByIds(questionIds) {
+  return [...new Set(questionIds)]
+    .map((id) => {
+      const question = state.questionBank.find((item) => item.id === id);
+      if (!question) return null;
+      const record = state.wrongRecords[id] || {
+        id,
+        category: question.category,
+        categoryKey: question.categoryKey,
+        number: question.number,
+        wrongCount: 0,
+        lastAnswer: "",
+        lastWrongAt: ""
+      };
+      return { record, question };
+    })
+    .filter(Boolean);
+}
+
+function getWrongSessions() {
+  return (state.statsRecords.sessions || [])
+    .filter((session) => Array.isArray(session.wrongIds) && session.wrongIds.length)
+    .slice(0, 30);
+}
+
+function formatSessionDate(dateText) {
+  const date = new Date(dateText);
+  if (Number.isNaN(date.getTime())) return dateText || "-";
+  return date.toLocaleString("zh-TW", {
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit"
+  });
+}
+
+function getQuestionHistoryRisk(question) {
+  const stats = state.statsRecords.questions?.[question.id];
+  if (!stats || !stats.wrong || !stats.attempts) return "";
+  const rate = Math.round((stats.wrong / stats.attempts) * 100);
+  return `歷史錯題率 ${rate}%（錯 ${stats.wrong}/${stats.attempts}）`;
+}
+
 function updateWrongBookBadge() {
   const count = Object.keys(state.wrongRecords).length;
-  els.wrongCountBadge.textContent = `${count} 題`;
+  const sessionCount = getWrongSessions().length;
+  els.wrongCountBadge.textContent = count ? `${count} 題` : `${sessionCount} 次`;
   if (state.mode === "wrongBook") {
-    els.scoreText.textContent = `錯題 ${count} 題`;
+    els.scoreText.textContent = `錯題 ${count} 題｜紀錄 ${sessionCount} 次`;
   }
 }
 
@@ -657,13 +756,16 @@ function updateProgress() {
   }
 
   const result = getExamResult();
-  const resultText = result.passed ? "合格" : "未合格";
+  const isPracticeSession = state.mode === "practice" || state.mode === "wrongPractice";
+  const resultText = isPracticeSession ? "完成" : (result.passed ? "合格" : "未合格");
   els.scoreText.textContent = `答對 ${result.score}｜答錯 ${result.wrong}｜${resultText}`;
   els.resultPanel.hidden = false;
-  els.resultPanel.className = `result-panel ${result.passed ? "pass" : "fail"}`;
-  els.resultLabel.textContent = state.endedByTimeout ? "時間到自動交卷" : "交卷結果";
+  els.resultPanel.className = `result-panel ${isPracticeSession || result.passed ? "pass" : "fail"}`;
+  els.resultLabel.textContent = state.endedByTimeout ? "時間到自動交卷" : (isPracticeSession ? "練習結果" : "交卷結果");
   els.resultScore.textContent = `答對 ${result.score} 題 / 答錯 ${result.wrong} 題 / ${resultText}`;
-  els.resultDetail.textContent = `${state.endedByTimeout ? "時間到，系統已自動交卷。" : ""}及格門檻 ${EXAM_RULES.passingScore} 題，已作答 ${answered} 題，未作答 ${result.total - answered} 題。錯題已更新至本機錯題本，統計已更新。`;
+  els.resultDetail.textContent = isPracticeSession
+    ? `${state.endedByTimeout ? "時間到，系統已自動交卷。" : ""}已作答 ${answered} 題，未作答 ${result.total - answered} 題。本次錯題已依完成時間加入錯題本，可從錯題本複習同一次範圍。`
+    : `${state.endedByTimeout ? "時間到，系統已自動交卷。" : ""}及格門檻 ${EXAM_RULES.passingScore} 題，已作答 ${answered} 題，未作答 ${result.total - answered} 題。錯題已更新至本機錯題本，統計已更新。`;
 }
 
 function renderFeedback(question) {
@@ -755,6 +857,7 @@ function render() {
   if (!question) {
     els.questionTitle.textContent = state.mode === "practice" ? "請至少選擇一個練習範圍" : "找不到題庫資料";
     els.categoryText.textContent = "-";
+    els.historyRiskText.hidden = true;
     els.optionsForm.innerHTML = "";
     setFeedbackText(state.mode === "practice" ? "可按全選恢復全部範圍，或勾選想練習的分類。" : "");
     updateProgress();
@@ -762,6 +865,11 @@ function render() {
   }
 
   els.categoryText.textContent = question.category;
+  const historyRiskText = (state.mode === "practice" || state.mode === "wrongPractice")
+    ? getQuestionHistoryRisk(question)
+    : "";
+  els.historyRiskText.textContent = historyRiskText;
+  els.historyRiskText.hidden = !historyRiskText;
   els.questionTitle.textContent = question.question;
   renderOptions(question);
   renderFeedback(question);
@@ -770,11 +878,12 @@ function render() {
   els.prevButton.disabled = state.currentIndex === 0;
   els.nextButton.disabled = state.currentIndex === state.questions.length - 1;
   els.submitButton.disabled = state.submitted;
+  els.submitButton.textContent = state.submitted ? "已交卷" : "交卷";
   els.submitButton.hidden = false;
   els.resetButton.textContent = "重新抽題";
 }
 
-function renderWrongBookStats(entries) {
+function renderWrongBookStats(entries, sessions) {
   els.wrongBookStats.innerHTML = "";
   const counts = entries.reduce((acc, entry) => {
     acc[entry.question.category] = (acc[entry.question.category] || 0) + 1;
@@ -783,6 +892,7 @@ function renderWrongBookStats(entries) {
 
   const summary = [
     ["錯題總數", `${entries.length} 題`],
+    ["錯題紀錄", `${sessions.length} 次`],
     ...Object.entries(counts)
   ];
 
@@ -849,18 +959,71 @@ function renderWrongBookItem(entry) {
   return item;
 }
 
+function renderWrongSessionItem(session) {
+  const entries = getWrongEntriesByIds(session.wrongIds || []);
+  const item = document.createElement("article");
+  item.className = "wrongbook-session";
+
+  const head = document.createElement("div");
+  head.className = "wrongbook-item-head";
+
+  const title = document.createElement("h3");
+  title.className = "wrongbook-item-title";
+  title.textContent = `${formatSessionDate(session.date)}｜${session.label || "測驗紀錄"}`;
+
+  const practiceButton = document.createElement("button");
+  practiceButton.type = "button";
+  practiceButton.className = "primary";
+  practiceButton.textContent = "複習本次錯題";
+  practiceButton.disabled = entries.length === 0;
+  practiceButton.addEventListener("click", () => {
+    showWrongPractice(session.wrongIds || []);
+  });
+
+  head.append(title, practiceButton);
+
+  const meta = document.createElement("div");
+  meta.className = "wrongbook-meta";
+  for (const text of [
+    `錯 ${entries.length} 題`,
+    `答對 ${session.score || 0} 題`,
+    `共 ${session.total || 0} 題`,
+    session.timedOut ? "時間到" : "已交卷"
+  ]) {
+    const badge = document.createElement("span");
+    badge.textContent = text;
+    meta.append(badge);
+  }
+
+  const preview = document.createElement("p");
+  preview.className = "wrongbook-session-preview";
+  preview.textContent = entries.slice(0, 3).map((entry) => `題號 ${entry.question.number}`).join("、")
+    || "找不到本次錯題題目";
+
+  item.append(head, meta, preview);
+  return item;
+}
+
 function renderWrongBook() {
   const entries = getWrongEntries();
-  els.scoreText.textContent = `錯題 ${entries.length} 題`;
+  const sessions = getWrongSessions();
+  els.scoreText.textContent = `錯題 ${entries.length} 題｜紀錄 ${sessions.length} 次`;
   els.startWrongPracticeButton.disabled = entries.length === 0;
-  renderWrongBookStats(entries);
+  renderWrongBookStats(entries, sessions);
   els.wrongBookList.innerHTML = "";
 
-  if (!entries.length) {
+  if (!entries.length && !sessions.length) {
     const empty = document.createElement("p");
     empty.className = "wrongbook-empty";
     empty.textContent = "目前沒有錯題。交卷後答錯或未作答的題目會記在這裡。";
     els.wrongBookList.append(empty);
+    return;
+  }
+
+  if (sessions.length) {
+    sessions.forEach((session) => {
+      els.wrongBookList.append(renderWrongSessionItem(session));
+    });
     return;
   }
 
@@ -1122,25 +1285,19 @@ els.practiceQuestionCountSelect.addEventListener("change", () => {
 els.clearWrongBookButton.addEventListener("click", () => {
   if (window.confirm && !window.confirm("確定要清空本機錯題本？")) return;
   state.wrongRecords = {};
+  state.statsRecords.sessions = (state.statsRecords.sessions || []).map((session) => ({
+    ...session,
+    wrongIds: [],
+    wrongCount: 0
+  }));
   saveWrongRecords();
+  saveStatsRecords();
   updateWrongBookBadge();
   renderWrongBook();
 });
 
 els.startWrongPracticeButton.addEventListener("click", () => {
-  if (!getWrongEntries().length) return;
-  els.examLayout.hidden = false;
-  els.quizActions.hidden = false;
-  els.wrongBookPanel.hidden = true;
-  els.statsPanel.hidden = true;
-  els.practiceControls.hidden = true;
-  els.examModeButton.className = "mode-tab";
-  els.practiceModeButton.className = "mode-tab";
-  els.bankModeButton.className = "mode-tab";
-  els.wrongBookModeButton.className = "mode-tab active";
-  els.statsModeButton.className = "mode-tab";
-  startWrongPractice();
-  render();
+  showWrongPractice();
 });
 
 els.bankCategoryFilter.addEventListener("change", () => {

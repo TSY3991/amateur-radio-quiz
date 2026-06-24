@@ -478,6 +478,12 @@ h1 {
   font-weight: 800;
 }
 
+.question-meta .history-risk {
+  border-color: rgba(180, 35, 24, 0.24);
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
 #questionTitle {
   margin: 0 0 24px;
   font-size: 26px;
@@ -891,7 +897,8 @@ h1 {
   text-align: center;
 }
 
-.wrongbook-item {
+.wrongbook-item,
+.wrongbook-session {
   padding: 16px;
   border: 1px solid rgba(38, 50, 74, 0.22);
   border-radius: 8px;
@@ -950,6 +957,12 @@ h1 {
   background: var(--success-soft);
   color: var(--success);
   font-weight: 800;
+}
+
+.wrongbook-session-preview {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
 }
 
 .stats-summary,
