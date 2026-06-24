@@ -1128,6 +1128,7 @@ function renderQuestionBank() {
     options.className = "question-bank-options";
     for (const option of question.options) {
       const optionItem = document.createElement("li");
+      if (option.key === question.answer) optionItem.className = "correct";
       optionItem.textContent = `(${option.key}) ${option.text}`;
       options.append(optionItem);
     }
@@ -1231,7 +1232,7 @@ async function loadQuestions() {
     state.wrongRecords = loadWrongRecords();
     state.statsRecords = loadStatsRecords();
     loadBankView();
-    const response = await fetch("data/amateurRadioLevel3.generated.json?v=20260624-2");
+    const response = await fetch("data/amateurRadioLevel3.generated.json?v=20260625-1");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const quiz = await response.json();
     startNewExam(quiz.questions || []);
