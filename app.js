@@ -711,7 +711,9 @@ function renderFeedback(question) {
 
 function renderOptions(question) {
   const selected = state.answers[question.id];
-  const shouldShowAnswer = state.submitted || (state.mode === "practice" && selected);
+  const isPracticeReview = (state.mode === "practice" || state.mode === "wrongPractice") && selected;
+  const shouldShowAnswer = state.submitted || isPracticeReview;
+  const shouldHideSelectedWrong = isPracticeReview && selected !== question.answer;
   els.optionsForm.innerHTML = "";
 
   question.options.forEach((option) => {
@@ -720,14 +722,16 @@ function renderOptions(question) {
 
     if (shouldShowAnswer) {
       if (option.key === question.answer) label.classList.add("correct");
-      if (option.key === selected && selected !== question.answer) label.classList.add("incorrect");
+      if (!isPracticeReview && option.key === selected && selected !== question.answer) {
+        label.classList.add("incorrect");
+      }
     }
 
     const input = document.createElement("input");
     input.type = "radio";
     input.name = "answer";
     input.value = option.key;
-    input.checked = selected === option.key;
+    input.checked = !shouldHideSelectedWrong && selected === option.key;
     input.disabled = state.submitted;
     input.addEventListener("change", () => {
       state.answers[question.id] = option.key;
