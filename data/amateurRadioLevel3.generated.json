@@ -379,7 +379,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）2 公尺。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-012",
@@ -408,7 +409,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）439.350 百萬赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-013",
@@ -437,7 +439,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）145.52 百萬赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-014",
@@ -466,7 +469,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）6 公尺。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-015",
@@ -495,7 +499,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）業餘無線電人員在這個波段也許會發現非業餘電臺，必須避免干擾他們。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-016",
@@ -524,7 +529,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-017",
@@ -553,7 +559,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）6公尺、2公尺、70公分。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-018",
@@ -582,7 +589,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）CW。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-019",
@@ -611,7 +619,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）BV3ABC。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-020",
@@ -640,7 +649,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）與業餘無線電服務及個人特色評論的相關通信。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-021",
@@ -669,7 +679,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）當他國已授權時。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-022",
@@ -698,7 +709,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）BM2XXX。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-023",
@@ -727,7 +739,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）10年。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-024",
@@ -756,7 +769,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）六個月起五個月內。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-025",
@@ -785,7 +799,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）取得NCC核發給你業餘無線電人員執照及電臺執照。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-026",
@@ -814,7 +829,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）不行。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-027",
@@ -843,7 +859,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）臨時電臺。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-028",
@@ -872,7 +889,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）一等、二等、三等。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-029",
@@ -901,7 +919,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）只有經NCC核准時。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-030",
@@ -930,7 +949,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）當與載人太空船通信的授權轉傳有關時。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-031",
@@ -959,7 +979,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）在業餘電臺正常使用的設備，並且此類活動不是定期進行的。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-032",
@@ -988,7 +1009,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）禁止任何此類語言。本題重點是限制或禁止事項；看到不得、不可、違規處分等字眼時，要選出最符合規範限制的項目。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-033",
@@ -1017,7 +1039,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）中繼電臺或太空電臺。本題重點是中繼電臺的收發頻率、偏移與協調；中繼操作通常要避免與其他使用者互相干擾。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-034",
@@ -1046,7 +1069,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）直接涉及人類生命或財產保護的情況下。本題重點是緊急通訊優先原則；遇到生命、財產或災害相關狀況時，通訊目的與合法性判斷會不同。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-035",
@@ -1075,7 +1099,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）用於公眾接收的傳輸。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-036",
@@ -1104,7 +1129,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）傳送編碼案例、公告信息或提供緊急通信所需的傳輸。本題重點是緊急通訊優先原則；遇到生命、財產或災害相關狀況時，通訊目的與合法性判斷會不同。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-037",
@@ -1133,7 +1159,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）從來都不行。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-038",
@@ -1162,7 +1189,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）NCC核發業餘無線電臺執照持有人或獲得外國人互惠授權的人。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-039",
@@ -1191,7 +1219,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）電臺執照持有人。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-040",
@@ -1220,7 +1249,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）由控制員持有的業餘無線電人員執照等級。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-041",
@@ -1249,7 +1279,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）控制員執行控制作業任務的地點。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-042",
@@ -1278,7 +1309,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）自動。本題重點是中繼電臺的收發頻率、偏移與協調；中繼操作通常要避免與其他使用者互相干擾。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-043",
@@ -1307,7 +1339,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）控制員和電臺執照持有人負有同等責任。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-044",
@@ -1336,7 +1369,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）中繼電臺操作。本題重點是中繼電臺的收發頻率、偏移與協調；中繼操作通常要避免與其他使用者互相干擾。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-045",
@@ -1365,7 +1399,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）即席控制。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-046",
@@ -1394,7 +1429,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）通過網際網路操作電臺。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-047",
@@ -1423,7 +1459,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）電臺執照持有人。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-048",
@@ -1452,7 +1489,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）在任何時候都不行。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-049",
@@ -1481,7 +1519,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）每次通信結束時和通信過程中每隔10分鐘。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-050",
@@ -1510,7 +1549,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）通信中至少每隔10分鐘和通信結束時。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-051",
@@ -1539,7 +1579,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）英語。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-052",
@@ -1568,7 +1609,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）使用CW或電話發射傳送呼號。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-053",
@@ -1597,7 +1639,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-054",
@@ -1626,7 +1669,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）中繼電臺。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-055",
@@ -1655,7 +1699,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）來源電臺的控制員。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-056",
@@ -1684,7 +1729,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）應NCC的要求。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-057",
@@ -1713,7 +1759,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）須經主管機關測試及格，並取得業餘無線電人員執照。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-058",
@@ -1742,7 +1789,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆非。題目中的其他選項都不符合題意，所以答案為以上皆非；作答時要逐一排除不符合條件的敘述。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-059",
@@ -1771,7 +1819,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）10 萬元。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-060",
@@ -1800,7 +1849,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）144-146 百萬赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-061",
@@ -1829,7 +1879,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）430-440 百萬赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-062",
@@ -1858,7 +1909,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-063",
@@ -1887,7 +1939,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）應本互相尊重之精神共同監督之。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-064",
@@ -1916,7 +1969,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）三個等級。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-065",
@@ -1945,7 +1999,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）都不需要測試。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-066",
@@ -1974,7 +2029,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）40 題。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-067",
@@ -2003,7 +2059,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）32 題。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-068",
@@ -2032,7 +2089,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）25 題。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-069",
@@ -2061,7 +2119,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）十年。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-070",
@@ -2090,7 +2149,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）持有二等業餘無線電人員執照且設置二等業餘無線電臺達一年以上，同時業餘無線電人員及電臺執照均需在有效期間內。。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-071",
@@ -2119,7 +2179,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）主管機關。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-072",
@@ -2148,7 +2209,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）二等。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-073",
@@ -2177,7 +2239,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）三等。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-074",
@@ -2206,7 +2269,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）一年以上。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-075",
@@ -2235,7 +2299,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）不能申請。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-076",
@@ -2264,7 +2329,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）三等。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-077",
@@ -2293,7 +2359,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）十年。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-078",
@@ -2322,7 +2389,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）一張。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-079",
@@ -2351,7 +2419,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）國家通訊傳播委員會。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-080",
@@ -2380,7 +2449,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）依人民團體法成立，從事業餘無線電活動之團體。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-081",
@@ -2409,7 +2479,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）電信管制射頻器材。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-082",
@@ -2438,7 +2509,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）以無線電磁波形式向外流動之能量。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-083",
@@ -2467,7 +2539,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）由無線電臺所產生之輻射或其輻射產物。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-084",
@@ -2496,7 +2569,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）具有將電能轉換為電磁輻射能輸出之機器。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-085",
@@ -2525,7 +2599,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）一等、二等或三等業餘電臺。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-086",
@@ -2554,7 +2629,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）二等或三等業餘電臺。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-087",
@@ -2583,7 +2659,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）三等業餘電臺。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-088",
@@ -2612,7 +2689,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）不得申設業餘無線電臺。本題重點是限制或禁止事項；看到不得、不可、違規處分等字眼時，要選出最符合規範限制的項目。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-089",
@@ -2641,7 +2719,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）不得申請。本題重點是限制或禁止事項；看到不得、不可、違規處分等字眼時，要選出最符合規範限制的項目。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-090",
@@ -2670,7 +2749,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）不得申設業餘無線電臺。本題重點是限制或禁止事項；看到不得、不可、違規處分等字眼時，要選出最符合規範限制的項目。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-091",
@@ -2699,7 +2779,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）不得申請。本題重點是限制或禁止事項；看到不得、不可、違規處分等字眼時，要選出最符合規範限制的項目。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-092",
@@ -2728,7 +2809,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）不得申請。本題重點是限制或禁止事項；看到不得、不可、違規處分等字眼時，要選出最符合規範限制的項目。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-093",
@@ -2757,7 +2839,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）取得我國居留證明。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-094",
@@ -2786,7 +2869,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）一人以設置一座為限。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-095",
@@ -2815,7 +2899,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）25 瓦特。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-096",
@@ -2844,7 +2929,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）25 瓦特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-097",
@@ -2873,7 +2959,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）50 瓦特。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-098",
@@ -2902,7 +2989,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）50 瓦特。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-099",
@@ -2931,7 +3019,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-100",
@@ -2960,7 +3049,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-101",
@@ -2989,7 +3079,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）十萬元。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-102",
@@ -3018,7 +3109,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）主管機關。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-103",
@@ -3047,7 +3139,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）六個月。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-104",
@@ -3076,7 +3169,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）主管機關。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-105",
@@ -3105,7 +3199,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）主管機關。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-106",
@@ -3134,7 +3229,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-107",
@@ -3163,7 +3259,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）主管機關。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-108",
@@ -3192,7 +3289,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）應填具電臺異動申請書，向主管機關申請，經審驗合格，換發電臺執照後，始得使用。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-109",
@@ -3221,7 +3319,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）禁止限制建築物及其他障礙物高度管理辦法之規定。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-110",
@@ -3250,7 +3349,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）天線高度超過地平面 60 公尺者。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-111",
@@ -3279,7 +3379,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）業餘電臺所在之縣、市。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-112",
@@ -3308,7 +3409,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）任何人員皆不得要求指配特定呼號。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-113",
@@ -3337,7 +3439,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）得申請改配呼號，惟原呼號不得再使用。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-114",
@@ -3366,7 +3469,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）臺北地區之業餘中繼電臺。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-115",
@@ -3395,7 +3499,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）離島地區之特殊業餘電臺。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-116",
@@ -3424,7 +3529,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）彰化、南投、雲林地區之一等業餘電臺。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-117",
@@ -3453,7 +3559,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）高雄地區之一等業餘電臺。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-118",
@@ -3482,7 +3589,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）屏東、花蓮、臺東地區之三等業餘電臺。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-119",
@@ -3511,7 +3619,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）苗栗、臺中地區之二等業餘電臺。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-120",
@@ -3540,7 +3649,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）桃園、新竹地區之三等業餘電臺。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-121",
@@ -3569,7 +3679,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）嘉南地區之三等業餘電臺。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-122",
@@ -3598,7 +3709,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）基宜地區之二等業餘電臺。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-123",
@@ -3627,7 +3739,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）英語或國際無線電規則規定之英語識別代字。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-124",
@@ -3656,7 +3769,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）斜線。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-125",
@@ -3685,7 +3799,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）十分鐘。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-126",
@@ -3714,7 +3829,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）外接射頻功率放大器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-127",
@@ -3743,7 +3859,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）應符合我國業餘無線射頻電機技術規範之規定。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-128",
@@ -3772,7 +3889,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）輸出功率、有效輻射功率及等效全向輻射功率（EIRP）三種。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-129",
@@ -3801,7 +3919,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）需電臺執照之電信管制射頻器材。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-130",
@@ -3830,7 +3949,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）經審驗合格發給執照，始得使用。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-131",
@@ -3859,7 +3979,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）頻率限於50百萬赫至50.15百萬赫、144百萬赫至146百萬赫及430百萬赫至440百萬赫，功率限於25瓦特以下。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-132",
@@ -3888,7 +4009,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）緊急呼叫及提供救助呼叫使用。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-133",
@@ -3917,7 +4039,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）禮貌地切換至其他頻率。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-134",
@@ -3946,7 +4069,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）避開該頻率，並於鄰近無人使用的頻率進行通信。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-135",
@@ -3975,7 +4099,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）一個。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-136",
@@ -4004,7 +4129,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）控制員。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-137",
@@ -4033,7 +4159,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）頻率協調員。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-138",
@@ -4062,7 +4189,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）控制點。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-139",
@@ -4091,7 +4219,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）使用未經指配之電臺呼號。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-140",
@@ -4120,7 +4249,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）應立即停止發射並予以改善。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-141",
@@ -4149,7 +4279,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）使用未經指配之頻率及電臺呼號。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-142",
@@ -4178,7 +4309,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）從事違法通信或傳送非法信息。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-143",
@@ -4207,7 +4339,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）將電臺租予他人。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-144",
@@ -4236,7 +4369,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）違反電信管理法相關規定。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-145",
@@ -4265,7 +4399,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）主管機關指配之電臺呼號。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-146",
@@ -4294,7 +4429,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）屬違法的行為。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-147",
@@ -4323,7 +4459,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）屬違法的行為。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-148",
@@ -4352,7 +4489,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）公眾行動電話、行動寬頻。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-149",
@@ -4381,7 +4519,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）其內容不可以洩露、發佈或加以利用。本題重點是限制或禁止事項；看到不得、不可、違規處分等字眼時，要選出最符合規範限制的項目。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-150",
@@ -4410,7 +4549,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）禁止未經核准截收非供公眾一般需用之無線電通信。本題重點是限制或禁止事項；看到不得、不可、違規處分等字眼時，要選出最符合規範限制的項目。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-151",
@@ -4439,7 +4579,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）違反業餘無線電人員及電臺管理辦法行為。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-152",
@@ -4468,7 +4609,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）屬違法行為。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-153",
@@ -4497,7 +4639,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）屬業餘無線電人員禮讓的表現。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-154",
@@ -4526,7 +4669,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）屬違法的行為。本題重點是限制或禁止事項；看到不得、不可、違規處分等字眼時，要選出最符合規範限制的項目。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-155",
@@ -4555,7 +4699,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）不可。本題重點是限制或禁止事項；看到不得、不可、違規處分等字眼時，要選出最符合規範限制的項目。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-156",
@@ -4584,7 +4729,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）屬違法行為。本題重點是限制或禁止事項；看到不得、不可、違規處分等字眼時，要選出最符合規範限制的項目。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-157",
@@ -4613,7 +4759,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）電信管理法相關規定處罰。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-158",
@@ -4642,7 +4789,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）必需頻帶寬度。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-159",
@@ -4671,7 +4819,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）佔用頻帶寬度。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-160",
@@ -4700,7 +4849,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）減載波單邊帶發射。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-161",
@@ -4729,7 +4879,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）遏制載波單邊帶發射。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-162",
@@ -4758,7 +4909,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）殘邊帶發射。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-163",
@@ -4787,7 +4939,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）有效輻射功率（ERP）。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-164",
@@ -4816,7 +4969,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）示標電臺。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-165",
@@ -4845,7 +4999,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）遙測電臺。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-166",
@@ -4874,7 +5029,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）中繼電臺。本題重點是中繼電臺的收發頻率、偏移與協調；中繼操作通常要避免與其他使用者互相干擾。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-167",
@@ -4903,7 +5059,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）太空電臺。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-168",
@@ -4932,7 +5089,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）地球電臺。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-169",
@@ -4961,7 +5119,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）遙控電臺。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-170",
@@ -4990,7 +5149,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）指揮電臺。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-171",
@@ -5019,7 +5179,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）即席控制。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-172",
@@ -5048,7 +5209,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）遙控控制。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-173",
@@ -5077,7 +5239,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）自動控制。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-174",
@@ -5106,7 +5269,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）另一業餘電臺控制員。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-175",
@@ -5135,7 +5299,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）主管機關申請。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-176",
@@ -5164,7 +5329,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-177",
@@ -5193,7 +5359,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）並取得電臺執照後始得使用。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-178",
@@ -5222,7 +5389,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）超過50 百萬赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-179",
@@ -5251,7 +5419,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）主管機關。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-180",
@@ -5280,7 +5449,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）不得再使用。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-181",
@@ -5309,7 +5479,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）原執照失其效力。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-182",
@@ -5338,7 +5509,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）臨時電臺。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-183",
@@ -5367,7 +5539,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）一次。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-184",
@@ -5396,7 +5569,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）臨時電臺。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-185",
@@ -5425,7 +5599,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）特殊業餘電臺及呼號指配申請書與設置使用管理計畫書。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-186",
@@ -5454,7 +5629,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）六個月為限。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-187",
@@ -5483,7 +5659,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）十年；六個月起五個月內。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-188",
@@ -5512,7 +5689,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）業餘無線射頻電機技術規範。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-189",
@@ -5541,7 +5719,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）無線電頻率使用管理辦法。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-190",
@@ -5570,7 +5749,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）主管機關。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-191",
@@ -5599,7 +5779,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）業餘無線射頻電機技術規範。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-192",
@@ -5628,7 +5809,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-193",
@@ -5657,7 +5839,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）限一等或二等業餘無線電人員。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-194",
@@ -5686,7 +5869,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）輸出功率不得大於一百瓦特；工作頻率四三○百萬赫以上。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-195",
@@ -5715,7 +5899,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）一年。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-196",
@@ -5744,7 +5929,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）主管機關。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-197",
@@ -5773,7 +5959,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-198",
@@ -5802,7 +5989,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）-10℃至50℃。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-199",
@@ -5831,7 +6019,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）43 dB。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-200",
@@ -5860,7 +6049,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）無線電頻率使用管理辦法。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-201",
@@ -5889,7 +6079,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）400 瓦特以下。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-202",
@@ -5918,7 +6109,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）100 瓦特以下。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-203",
@@ -5947,7 +6139,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）200 瓦特以下。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-204",
@@ -5976,7 +6169,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）50 瓦特以下。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-205",
@@ -6005,7 +6199,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）25 瓦特以下。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-206",
@@ -6034,7 +6229,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）25 瓦特以下。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-207",
@@ -6063,7 +6259,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）50 瓦特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-208",
@@ -6092,7 +6289,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）限±5ppm內。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-209",
@@ -6121,7 +6319,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）於遙控無人機利用業餘電臺傳送信號或信息。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-210",
@@ -6150,7 +6349,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）六個月為限。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-211",
@@ -6179,7 +6379,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）50 百萬赫以上。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-212",
@@ -6208,7 +6409,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）自動控制作業。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-213",
@@ -6237,7 +6439,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）主管機關。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-214",
@@ -6266,7 +6469,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）電信管制射頻器材製造輸入及申報作業管理辦法。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-215",
@@ -6295,7 +6499,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-216",
@@ -6324,7 +6529,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）一次。法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-217",
@@ -6353,7 +6559,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）低功率射頻器材技術規範。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-218",
@@ -6382,7 +6589,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）斜線。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-219",
@@ -6411,7 +6619,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）均使用阿拉伯數字為限。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-220",
@@ -6440,7 +6649,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）145百萬赫及433百萬赫。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-221",
@@ -6469,7 +6679,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）1 瓦特（EIRP）以下。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-222",
@@ -6498,7 +6709,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）須介於±2.5 千赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-223",
@@ -6527,7 +6739,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）須介於±4.0 千赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-224",
@@ -6556,7 +6769,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）須介於±5.0 千赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-225",
@@ -6585,7 +6799,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）1 毫瓦特。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-226",
@@ -6614,7 +6829,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）20 毫瓦特。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-227",
@@ -6643,7 +6859,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）100 毫瓦特。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-228",
@@ -6672,7 +6889,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）一次。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-regulations-229",
@@ -6701,7 +6919,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）六個月。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 法規題要抓主管機關、資格、呼號、頻率、許可及操作限制；正解是最符合題幹法規條件的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-001",
@@ -6730,7 +6949,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）正或負600 千赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-002",
@@ -6759,7 +6979,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）正或負5 百萬赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-003",
@@ -6788,7 +7009,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）呼叫友台呼號，然後標識自己的呼號。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-004",
@@ -6817,7 +7039,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）發射友台呼號然後加上自己的呼號。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-005",
@@ -6846,7 +7069,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）有效的標識在發送中的電臺。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-006",
@@ -6875,7 +7099,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）電臺識別必須至少每10分鐘一次，還有在測試終了時。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-007",
@@ -6904,7 +7129,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）呼叫任一電臺。本題重點是業餘無線電常用縮語與通聯慣例；這類題目通常考固定用語的意思。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-008",
@@ -6933,7 +7159,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）呼號。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-009",
@@ -6962,7 +7189,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）在指定的頻段內不超過最大功率輸出允許值，使用達成通訊的最小功率。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-010",
@@ -6991,7 +7219,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-011",
@@ -7020,7 +7249,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）單工通訊。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-012",
@@ -7049,7 +7279,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）CTCSS。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-013",
@@ -7078,7 +7309,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）載波制噪。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-014",
@@ -7107,7 +7339,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-015",
@@ -7136,7 +7369,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）調變訊號的振幅。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-016",
@@ -7165,7 +7399,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）訊號會佔用更多的頻寬。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-017",
@@ -7194,7 +7429,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）使用拼音字母。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-018",
@@ -7223,7 +7459,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）QSY。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-019",
@@ -7252,7 +7489,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）該電臺可以直接通訊而不用中繼電臺。本題重點是中繼電臺的收發頻率、偏移與協調；中繼操作通常要避免與其他使用者互相干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-020",
@@ -7281,7 +7519,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）僅允許在業餘頻段50百萬赫以上的某些部分操作。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-021",
@@ -7310,7 +7549,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）不行，NCC的規則一定要遵守。本題重點是主管機關或法規名稱的辨識；不要把國際組織、其他部會或不同用途的管理規範混在一起。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-022",
@@ -7339,7 +7579,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）並聯電池到車上的電池，然後啟動引擎。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-023",
@@ -7368,7 +7609,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）這類的字句跟術語應該用標準的拼音字母拼出。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-024",
@@ -7397,7 +7639,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）兩者都可以提供緊急狀況時的通訊。本題重點是緊急通訊優先原則；遇到生命、財產或災害相關狀況時，通訊目的與合法性判斷會不同。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-025",
@@ -7426,7 +7669,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-026",
@@ -7455,7 +7699,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）在說”Priority”或是”Emergency” 之後加上自己的呼號。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-027",
@@ -7484,7 +7729,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）在該頻率內保持靜默，直到被連網控制臺點名呼叫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-028",
@@ -7513,7 +7759,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）接收到的訊息完整的傳遞出去。本題重點是緊急通訊優先原則；遇到生命、財產或災害相關狀況時，通訊目的與合法性判斷會不同。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-029",
@@ -7542,7 +7789,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）可以，只有涉及立即人命安全及財產保護情況。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-030",
@@ -7571,7 +7819,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）當訊息通過業餘無線電交通處理系統時，提供追蹤訊息的資訊。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-031",
@@ -7600,7 +7849,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）它計算訊息內文字部分的字句或相等於字句的數目。本題重點是公式或比例關係；注意單位、倍數、增益與損耗的方向，避免把增加與降低混淆。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-032",
@@ -7629,7 +7879,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）有證照的業餘無線電人員自願性註冊其等級跟設備以提供公眾服務的通訊義務。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-033",
@@ -7658,7 +7909,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）儘可能嘗試移動幾公尺或改變天線的方向，因為反射可能導致多路徑失真。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-034",
@@ -7687,7 +7939,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）更短的波長使它更容易穿透建築物結構。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-035",
@@ -7716,7 +7969,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）水平。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-036",
@@ -7745,7 +7999,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）信號可能明顯變弱。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-037",
@@ -7774,7 +8029,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）嘗試找到反射信號給中繼電臺的路徑。本題重點是中繼電臺的收發頻率、偏移與協調；中繼操作通常要避免與其他使用者互相干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-038",
@@ -7803,7 +8059,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）尖椿籬柵性的波動(picket fencing)。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-039",
@@ -7832,7 +8089,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）電磁波。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-040",
@@ -7861,7 +8119,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）通過不同路徑到達的隨機組合信號。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-041",
@@ -7890,7 +8149,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）發送或接收可以使用垂直或水平極化的天線。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-042",
@@ -7919,7 +8179,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）錯誤率可能會增加。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-043",
@@ -7948,7 +8209,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）電離層。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-044",
@@ -7977,7 +8239,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）波長。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-045",
@@ -8006,7 +8269,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）電場的方向。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-046",
@@ -8035,7 +8299,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）電場和磁場。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-047",
@@ -8064,7 +8329,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）以光速。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-048",
@@ -8093,7 +8359,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）隨著頻率的增加，波長變短。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-049",
@@ -8122,7 +8389,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以公尺為單位的波長等於300除以以百萬赫為單位的頻率。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-050",
@@ -8151,7 +8419,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）近似的波長。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-051",
@@ -8180,7 +8449,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）30至300 百萬赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-052",
@@ -8209,7 +8479,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）300至3000 百萬赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-053",
@@ -8238,7 +8509,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）3至30 百萬赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-054",
@@ -8267,7 +8539,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）每秒300,000,000 公尺。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-055",
@@ -8296,7 +8569,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）UHF信號通常不會被電離層反射。本題重點是中繼電臺的收發頻率、偏移與協調；中繼操作通常要避免與其他使用者互相干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-056",
@@ -8325,7 +8599,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）信號被不定時發生的E層折射。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-057",
@@ -8354,7 +8629,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）信號呈現強度的快速波動並且常常聲音失真。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-058",
@@ -8383,7 +8659,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）灰線傳播。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-059",
@@ -8412,7 +8689,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）刀刃(Knife-edge)繞射。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-060",
@@ -8441,7 +8719,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）對流層散射。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-061",
@@ -8470,7 +8749,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）6 公尺。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-062",
@@ -8499,7 +8779,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）大氣中的逆溫(Temperature inversion)。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-063",
@@ -8528,7 +8809,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）在高太陽黑子活動期間，從黎明到日落之後不久。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-064",
@@ -8557,7 +8839,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）兩個電臺可以通過直接路徑進行通信的距離。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-065",
@@ -8586,7 +8869,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）以無線電波與光比，地球看起來彎曲程度比較小。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-066",
@@ -8615,7 +8899,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）6 公尺。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-067",
@@ -8644,7 +8929,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）某些連接器包含了按鍵通話(push-to-talk)及供電給麥克風的電壓。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-068",
@@ -8673,7 +8959,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-069",
@@ -8702,7 +8989,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）可防止電壓波動傳達至敏感的電路。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-070",
@@ -8731,7 +9019,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）發射機與天線之間。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-071",
@@ -8760,7 +9049,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）在發射機及天線之間，用饋線串接之。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-072",
@@ -8789,7 +9079,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）終端節點控制器。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-073",
@@ -8818,7 +9109,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）音效卡供給麥克風輸入之用，且將接收到的音訊轉化為數位形式。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-074",
@@ -8847,7 +9139,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）平版帶(Flat strap)。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-075",
@@ -8876,7 +9169,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）鍵盤或VFO(可變頻率振盪器)旋鈕。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-076",
@@ -8905,7 +9199,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）在沒有接收到信號時，使接收機的輸出噪音靜音。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-077",
@@ -8934,7 +9229,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）將頻率儲存至記憶頻道。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-078",
@@ -8963,7 +9259,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）接收機的RIT或淨化器(clarifier)。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-079",
@@ -8992,7 +9289,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）接收機增量調整(Receiver Incremental Tuning)。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-080",
@@ -9021,7 +9319,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）藉著選擇可匹配於該模式的頻寬，來降低噪音或干擾的程度。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-081",
@@ -9050,7 +9349,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-082",
@@ -9079,7 +9379,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）傳輸出現亂碼、失真或無法解出的報告。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-083",
@@ -9108,7 +9409,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）其執照權限允許他們在衛星上行頻率上操作的任何業餘愛好者。本題重點是衛星通訊特性；衛星相對運動、旋轉或軌道位置會影響接收頻率與信號強弱。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-084",
@@ -9137,7 +9439,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）完成聯繫所需的最小功率。本題重點是衛星通訊特性；衛星相對運動、旋轉或軌道位置會影響接收頻率與信號強弱。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-085",
@@ -9166,7 +9469,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-086",
@@ -9195,7 +9499,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）持有三等或更高級別業餘無線電執照的業餘愛好者。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-087",
@@ -9224,7 +9529,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）來自太空站所發射的衛星示標信號。本題重點是衛星通訊特性；衛星相對運動、旋轉或軌道位置會影響接收頻率與信號強弱。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-088",
@@ -9253,7 +9559,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）克卜勒元素。本題重點是衛星通訊特性；衛星相對運動、旋轉或軌道位置會影響接收頻率與信號強弱。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-089",
@@ -9282,7 +9589,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）衛星處於低地球軌道(Low Earth Orbit)。本題重點是衛星通訊特性；衛星相對運動、旋轉或軌道位置會影響接收頻率與信號強弱。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-090",
@@ -9311,7 +9619,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）FM Packet。本題重點是衛星通訊特性；衛星相對運動、旋轉或軌道位置會影響接收頻率與信號強弱。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-091",
@@ -9340,7 +9649,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）定向天線。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-092",
@@ -9369,7 +9679,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）比賽。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-093",
@@ -9398,7 +9709,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）為正確識別和比賽交換需要，只發送最少的必要信息。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-094",
@@ -9427,7 +9739,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）指定給地理位置的字母編號指示符號器。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-095",
@@ -9456,7 +9769,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）1 瓦特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-096",
@@ -9485,7 +9799,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）必須在發射機標貼載有業餘無線人員的姓名、呼號和地址的標籤。本題重點是電臺識別與呼號規則；呼號或識別方式用來確認電臺身分與設置類型。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-097",
@@ -9514,7 +9829,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-098",
@@ -9543,7 +9859,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）Automatic Packet Reporting System。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-099",
@@ -9572,7 +9889,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）全球定位系統接收機。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-100",
@@ -9601,7 +9919,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）類比快速掃描彩色電視信號。通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-101",
@@ -9630,7 +9949,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）提供附有地圖以顯示電臺位置的即時數位通信。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-102",
@@ -9659,7 +9979,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）相移鍵控(Phase Shift Keying)。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-103",
@@ -9688,7 +10009,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）低速數據傳輸模式。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-104",
@@ -9717,7 +10039,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-105",
@@ -9746,7 +10069,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）格雷。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-106",
@@ -9775,7 +10099,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-107",
@@ -9804,7 +10129,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）當接收端偵測到錯誤時，會向發送端要求重發信息的數位方法。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-108",
@@ -9833,7 +10159,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）信號集中一個方向的天線。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-109",
@@ -9862,7 +10189,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）電場垂直於地球。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-110",
@@ -9891,7 +10219,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）水平極化天線。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-111",
@@ -9920,7 +10249,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）不像全尺寸天線那樣有效傳輸或接收。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-112",
@@ -9949,7 +10279,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）縮短。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-113",
@@ -9978,7 +10309,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）指向天線。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-114",
@@ -10007,7 +10339,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）信號可能比在車外更弱。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-115",
@@ -10036,7 +10369,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）50。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-116",
@@ -10065,7 +10399,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）284。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-117",
@@ -10094,7 +10429,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）天線的寬邊側(broadside)。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-118",
@@ -10123,7 +10459,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）與參考天線相比，指定方向的信號強度的增加。本題重點是公式或比例關係；注意單位、倍數、增益與損耗的方向，避免把增加與降低混淆。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-119",
@@ -10152,7 +10489,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）它比1/4波長天線提供更低的輻射角度和更多的增益天線，並提供更好的覆蓋範圍。本題重點是公式或比例關係；注意單位、倍數、增益與損耗的方向，避免把增加與降低混淆。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-120",
@@ -10181,7 +10519,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）安裝車頂中央可以有最均勻的輻射方向。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-121",
@@ -10210,7 +10549,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）在天線的輻射部分加入電感器，使電氣特性變長。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-122",
@@ -10239,7 +10579,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）功率有效傳輸與減少損失。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-123",
@@ -10268,7 +10609,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）50 歐姆。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-124",
@@ -10297,7 +10639,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）可以方便使用，且可以應用於某些特殊的安裝需求。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-125",
@@ -10326,7 +10669,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）將天線系統阻抗與收發機的輸出阻抗相匹配。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-126",
@@ -10355,7 +10699,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）損失增加。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-127",
@@ -10384,7 +10729,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）N型連接頭。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-128",
@@ -10413,7 +10759,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）通常用於HF頻率。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-129",
@@ -10442,7 +10789,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）防止饋線損失增加。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-130",
@@ -10471,7 +10819,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）天線或饋線的連接處鬆動。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-131",
@@ -10500,7 +10849,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）RG-8在指定頻率下損耗較少。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-communication_methods-132",
@@ -10529,7 +10879,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）空氣絕緣硬線。本題重點是公式或比例關係；注意單位、倍數、增益與損耗的方向，避免把增加與降低混淆。 通訊方法題要抓通聯程序、頻率使用、設備操作與訊號處理；正解是最符合實務操作或題庫標準用語的選項。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-001",
@@ -10558,7 +10909,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）安培。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-002",
@@ -10587,7 +10939,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）瓦特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-003",
@@ -10616,7 +10969,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）電流。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-004",
@@ -10645,7 +10999,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）直流電。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-005",
@@ -10674,7 +11029,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）電壓。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-006",
@@ -10703,7 +11059,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）大約12 伏特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-007",
@@ -10732,7 +11089,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）銅。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-008",
@@ -10761,7 +11119,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）玻璃。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-009",
@@ -10790,7 +11149,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）交流電流。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-010",
@@ -10819,7 +11179,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）電功率。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-011",
@@ -10848,7 +11209,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）伏特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-012",
@@ -10877,7 +11239,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）頻率。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-013",
@@ -10906,7 +11269,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）1500 毫安。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-014",
@@ -10935,7 +11299,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）1500 千赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-015",
@@ -10964,7 +11329,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）一千伏特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-016",
@@ -10993,7 +11359,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）一百萬分之一伏特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-017",
@@ -11022,7 +11389,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）0.5 瓦特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-018",
@@ -11051,7 +11419,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）3 安培。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-019",
@@ -11080,7 +11449,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）3525 千赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-020",
@@ -11109,7 +11479,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）1 μF。本題重點是公式或比例關係；注意單位、倍數、增益與損耗的方向，避免把增加與降低混淆。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-021",
@@ -11138,7 +11509,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）3 dB。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-022",
@@ -11167,7 +11539,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）-6 dB。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-023",
@@ -11196,7 +11569,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）10 dB。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-024",
@@ -11225,7 +11599,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）28.400 百萬赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-025",
@@ -11254,7 +11629,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）2.425 吉赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-026",
@@ -11283,7 +11659,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）電容。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-027",
@@ -11312,7 +11689,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）法拉。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-028",
@@ -11341,7 +11719,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）電感。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-029",
@@ -11370,7 +11749,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）亨利。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-030",
@@ -11399,7 +11779,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）赫茲。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-031",
@@ -11428,7 +11809,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）各種射頻信號。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-032",
@@ -11457,7 +11839,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）無線電波。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-033",
@@ -11486,7 +11869,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）電功率(P)=電壓(E)乘以電流(I)。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-034",
@@ -11515,7 +11899,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）138 瓦特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-035",
@@ -11544,7 +11929,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）30 瓦特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-036",
@@ -11573,7 +11959,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）10 安培。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-037",
@@ -11602,7 +11989,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）衡量電路對交流電流的阻力。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-038",
@@ -11631,7 +12019,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）歐姆。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-039",
@@ -11660,7 +12049,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）電流(I)=電壓(E)除以電阻(R)。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-040",
@@ -11689,7 +12079,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）電壓(E)=電流(I)乘以電阻(R)。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-041",
@@ -11718,7 +12109,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）電阻(R)= 電壓(E) 除以電流(I)。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-042",
@@ -11747,7 +12139,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）30 歐姆。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-043",
@@ -11776,7 +12169,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）8 歐姆。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-044",
@@ -11805,7 +12199,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）3 歐姆。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-045",
@@ -11834,7 +12229,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）1.5 安培。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-046",
@@ -11863,7 +12259,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）2 安培。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-047",
@@ -11892,7 +12289,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）10 安培。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-048",
@@ -11921,7 +12319,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）1 伏特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-049",
@@ -11950,7 +12349,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）10 伏特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-050",
@@ -11979,7 +12379,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）20 伏特。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-051",
@@ -12008,7 +12409,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）電阻器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-052",
@@ -12037,7 +12439,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）電位計。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-053",
@@ -12066,7 +12469,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）阻抗。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-054",
@@ -12095,7 +12499,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）電容器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-055",
@@ -12124,7 +12529,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）電容器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-056",
@@ -12153,7 +12559,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）電感器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-057",
@@ -12182,7 +12589,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）電感器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-058",
@@ -12211,7 +12619,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）開關。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-059",
@@ -12240,7 +12649,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）保險絲。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-060",
@@ -12269,7 +12679,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-061",
@@ -12298,7 +12709,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）碳鋅。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-062",
@@ -12327,7 +12739,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）電晶體。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-063",
@@ -12356,7 +12769,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）二極體。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-064",
@@ -12385,7 +12799,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）電晶體。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-065",
@@ -12414,7 +12829,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）電晶體。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-066",
@@ -12443,7 +12859,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）電晶體。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-067",
@@ -12472,7 +12889,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）用條紋。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-068",
@@ -12501,7 +12919,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）發光二極體(Light Emitting Diode)。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-069",
@@ -12530,7 +12949,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）場效應電晶體(Field Effect Transistor)。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-070",
@@ -12559,7 +12979,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）陽極和陰極。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-071",
@@ -12588,7 +13009,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）射極、基極和集極。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-072",
@@ -12617,7 +13039,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）源極、閘極和汲極。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-073",
@@ -12646,7 +13069,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）增益。本題重點是公式或比例關係；注意單位、倍數、增益與損耗的方向，避免把增加與降低混淆。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-074",
@@ -12675,7 +13099,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）原理圖符號。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-075",
@@ -12704,7 +13129,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）電阻器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-076",
@@ -12733,7 +13159,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）電晶體。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-077",
@@ -12762,7 +13189,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）燈。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-078",
@@ -12791,7 +13219,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）電池。本題重點是電源與供電安全；要注意極性、電壓型態、電池狀態與設備可承受的供電條件。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-079",
@@ -12820,7 +13249,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）電容器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-080",
@@ -12849,7 +13279,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）發光二極管。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-081",
@@ -12878,7 +13309,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）可變電阻器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-082",
@@ -12907,7 +13339,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）變壓器。本題重點是電源與供電安全；要注意極性、電壓型態、電池狀態與設備可承受的供電條件。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-083",
@@ -12936,7 +13369,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）可變電感器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-084",
@@ -12965,7 +13399,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）天線。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-085",
@@ -12994,7 +13429,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）電氣元件。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-086",
@@ -13023,7 +13459,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）元件的物理外觀。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-087",
@@ -13052,7 +13489,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）整流器。本題重點是電源與供電安全；要注意極性、電壓型態、電池狀態與設備可承受的供電條件。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-088",
@@ -13081,7 +13519,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）由電磁鐵控制的開關。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-089",
@@ -13110,7 +13549,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）單刀單擲。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-090",
@@ -13139,7 +13579,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）電表。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-091",
@@ -13168,7 +13609,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）調節器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-092",
@@ -13197,7 +13639,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）變壓器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-093",
@@ -13226,7 +13669,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）發光二極體。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-094",
@@ -13255,7 +13699,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）電容器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-095",
@@ -13284,7 +13729,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）積體電路。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-096",
@@ -13313,7 +13759,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）控制電流的流動。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-097",
@@ -13342,7 +13789,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）串聯或並聯形成濾波器的電感器和電容器。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-098",
@@ -13371,7 +13819,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）靈敏度。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-099",
@@ -13400,7 +13849,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）發射機和接收機的組合單元。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-100",
@@ -13429,7 +13879,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）混頻器。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-101",
@@ -13458,7 +13909,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）選擇性。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-102",
@@ -13487,7 +13939,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）振盪器。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-103",
@@ -13516,7 +13969,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）變頻器。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-104",
@@ -13545,7 +13999,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）在接收和發送之間切換的按鍵通話功能。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-105",
@@ -13574,7 +14029,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）調變。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-106",
@@ -13603,7 +14059,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）多種模式的VHF收發機。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-107",
@@ -13632,7 +14089,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）射頻功率放大器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-108",
@@ -13661,7 +14119,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）在天線和接收機之間。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-109",
@@ -13690,7 +14149,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）防止測試時的信號輻射。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-110",
@@ -13719,7 +14179,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）天線分析儀。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-111",
@@ -13748,7 +14209,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）衡量負載與傳輸線相匹配情形。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-112",
@@ -13777,7 +14239,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）1:1。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-113",
@@ -13806,7 +14269,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）2:1。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-114",
@@ -13835,7 +14299,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）阻抗不匹配。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-115",
@@ -13864,7 +14329,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）被轉化成熱量。本題重點是公式或比例關係；注意單位、倍數、增益與損耗的方向，避免把增加與降低混淆。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-116",
@@ -13893,7 +14359,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）方向功率表。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-117",
@@ -13922,7 +14389,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）受潮。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-118",
@@ -13951,7 +14419,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）紫外線會損壞外皮並讓水進入電纜。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-119",
@@ -13980,7 +14449,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）需要特殊的技術來防止進水。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-120",
@@ -14009,7 +14479,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）在無線電收發機和天線之間傳送射頻信號。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-121",
@@ -14038,7 +14509,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）無感電阻器和散熱器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-122",
@@ -14067,7 +14539,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）電壓表。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-123",
@@ -14096,7 +14569,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）與電路並聯。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-124",
@@ -14125,7 +14599,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）與電路串聯。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-125",
@@ -14154,7 +14629,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）電流表。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-126",
@@ -14183,7 +14659,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）歐姆表。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-127",
@@ -14212,7 +14689,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）嘗試選擇電阻選項來測量電壓。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-128",
@@ -14241,7 +14719,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）電壓和電阻。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-129",
@@ -14270,7 +14749,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）松香劑。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-130",
@@ -14299,7 +14779,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）粒狀或無光澤的表面。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-131",
@@ -14328,7 +14809,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）電路中有一個大電容。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-132",
@@ -14357,7 +14839,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）單邊帶。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-133",
@@ -14386,7 +14869,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）調頻。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-134",
@@ -14415,7 +14899,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）單邊帶。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-135",
@@ -14444,7 +14929,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）調頻。本題重點是中繼電臺的收發頻率、偏移與協調；中繼操作通常要避免與其他使用者互相干擾。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-136",
@@ -14473,7 +14959,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）電報。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-137",
@@ -14502,7 +14989,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）上邊帶。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-138",
@@ -14531,7 +15019,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）單邊帶信號具有較窄的帶寬。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-139",
@@ -14560,7 +15049,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）3 千赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-140",
@@ -14589,7 +15079,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）在10和15 千赫之間。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-141",
@@ -14618,7 +15109,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）大約6 百萬赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-142",
@@ -14647,7 +15139,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）150 赫。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-143",
@@ -14676,7 +15169,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）衛星和地球電臺之間的相對運動引起的信號頻率變化。本題重點是衛星通訊特性；衛星相對運動、旋轉或軌道位置會影響接收頻率與信號強弱。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-144",
@@ -14705,7 +15199,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）衛星上行鏈路在70公分波段，下行鏈路在2公尺波段。本題重點是衛星通訊特性；衛星相對運動、旋轉或軌道位置會影響接收頻率與信號強弱。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-radio_system_principles-145",
@@ -14734,7 +15229,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）衛星及其天線的旋轉。本題重點是衛星通訊特性；衛星相對運動、旋轉或軌道位置會影響接收頻率與信號強弱。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-001",
@@ -14763,7 +15259,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）確定電路是沒有供電的狀況。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-002",
@@ -14792,7 +15289,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）確定電壓表和測量線材是在額定電壓規格下使用。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-003",
@@ -14821,7 +15319,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）端子短路會導致灼傷、起火或爆炸。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-004",
@@ -14850,7 +15349,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-005",
@@ -14879,7 +15379,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）接地線。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-006",
@@ -14908,7 +15409,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）在過載情況下中斷電源。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-007",
@@ -14937,7 +15439,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）電流過大可能會引起火災。題幹是在找不符合、錯誤或禁止的項目；作答時要先注意反向關鍵字，再選出例外或不合規的選項。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-008",
@@ -14966,7 +15469,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-009",
@@ -14995,7 +15499,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）將所有保護器接地到共用的接地板，再將這塊接地板連接到外部接地。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-010",
@@ -15024,7 +15529,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）與交流電火線串聯的保險絲或斷路器。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-011",
@@ -15053,7 +15559,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）如果通風不良，爆炸性氣體會累積。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-012",
@@ -15082,7 +15589,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）電池可能會過熱，並放出易燃氣體或爆炸。本題重點是電源與供電安全；要注意極性、電壓型態、電池狀態與設備可承受的供電條件。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-013",
@@ -15111,7 +15619,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）可能會因儲存在大容量電容器中的電量而受到電擊。本題重點是緊急通訊優先原則；遇到生命、財產或災害相關狀況時，通訊目的與合法性判斷會不同。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-014",
@@ -15140,7 +15649,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）在鐵塔上完成工作的所有時間。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-015",
@@ -15169,7 +15679,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）穿上安全背帶和安全眼鏡。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-016",
@@ -15198,7 +15709,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆非。題目中的其他選項都不符合題意，所以答案為以上皆非；作答時要逐一排除不符合條件的敘述。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-017",
@@ -15227,7 +15739,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）尋找並清除任何上方電線。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-018",
@@ -15256,7 +15769,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）吊升塔節或天線。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-019",
@@ -15285,7 +15799,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）假如天線意外掉落，天線必須要離電力線超過3公尺。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-020",
@@ -15314,7 +15829,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）除非它處於完全縮回的位置，否則絕不能攀爬這種類型的塔。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-021",
@@ -15343,7 +15859,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）在鐵塔底部每個支撐點分別安裝2.7公尺長的接地棒，將每支接地棒都連接到鐵塔。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-022",
@@ -15372,7 +15889,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）天線會接觸到高壓電線。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-023",
@@ -15401,7 +15919,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）導線避免過大的彎曲。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-024",
@@ -15430,7 +15949,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）確保接地線連接短而直接。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-025",
@@ -15459,7 +15979,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）非游離輻射。安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-026",
@@ -15488,7 +16009,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）50 百萬赫。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-027",
@@ -15517,7 +16039,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）25瓦特(PEP) 在天線端。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-028",
@@ -15546,7 +16069,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-029",
@@ -15575,7 +16099,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）人體在某些頻率比其他頻率吸收更多的射頻能量。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-030",
@@ -15604,7 +16129,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）他們可能會受到射頻燒傷。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-031",
@@ -15633,7 +16159,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）重新安置天線。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-032",
@@ -15662,7 +16189,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）每當異動設備的元件時，重新評估電臺的射頻安全規定。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-033",
@@ -15691,7 +16219,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）工作週期影響人們對輻射的暴露的平均值。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-034",
@@ -15720,7 +16249,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）發射機發射的時間百分比。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-035",
@@ -15749,7 +16279,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）射頻輻射沒有足夠的能量來引起基因的損傷。安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-safety_protection-036",
@@ -15778,7 +16309,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）2倍。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 安全題要優先考慮斷電、接地、防觸電、電力線距離與射頻暴露；正解是較安全且符合規範的處置。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-electromagnetic_compatibility-001",
@@ -15807,7 +16339,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）鐵氧體扼流圈(Ferrite choke)。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 電磁相容題要抓濾波、屏蔽、接地、扼流與接收機抗干擾能力；正解是能降低不必要耦合或失真的作法。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-electromagnetic_compatibility-002",
@@ -15836,7 +16369,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）交流發電機。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 電磁相容題要抓濾波、屏蔽、接地、扼流與接收機抗干擾能力；正解是能降低不必要耦合或失真的作法。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-electromagnetic_compatibility-003",
@@ -15865,7 +16399,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）接在電池或引擎之接地帶上。本題重點是人身與設備安全；測量、施工或天線架設前，應先降低觸電、雷擊與射頻暴露風險。 電磁相容題要抓濾波、屏蔽、接地、扼流與接收機抗干擾能力；正解是能降低不必要耦合或失真的作法。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-electromagnetic_compatibility-004",
@@ -15894,7 +16429,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）車輛電氣系統的噪音經由你的語音音頻一併發射出來。本題重點是收發機操作與接收性能；要分清楚發射控制、接收濾波、靜噪與抗干擾能力。 電磁相容題要抓濾波、屏蔽、接地、扼流與接收機抗干擾能力；正解是能降低不必要耦合或失真的作法。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-electromagnetic_compatibility-005",
@@ -15923,7 +16459,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）輸出信號可能失真。本題重點是公式或比例關係；注意單位、倍數、增益與損耗的方向，避免把增加與降低混淆。 電磁相容題要抓濾波、屏蔽、接地、扼流與接收機抗干擾能力；正解是能降低不必要耦合或失真的作法。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-electromagnetic_compatibility-006",
@@ -15952,7 +16489,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）中繼電臺的發射與接收頻率間的差異。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 電磁相容題要抓濾波、屏蔽、接地、扼流與接收機抗干擾能力；正解是能降低不必要耦合或失真的作法。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-electromagnetic_compatibility-007",
@@ -15981,7 +16519,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）保持接收音頻相對比較的穩定。本題重點是公式或比例關係；注意單位、倍數、增益與損耗的方向，避免把增加與降低混淆。 電磁相容題要抓濾波、屏蔽、接地、扼流與接收機抗干擾能力；正解是能降低不必要耦合或失真的作法。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-electromagnetic_compatibility-008",
@@ -16010,7 +16549,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）增加導線的載流能力。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 電磁相容題要抓濾波、屏蔽、接地、扼流與接收機抗干擾能力；正解是能降低不必要耦合或失真的作法。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-electromagnetic_compatibility-009",
@@ -16039,7 +16579,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）遠離麥克風說話。本題重點是頻率、波段、偏移量或頻寬的對應；作答時要直接比對題幹數值與題庫標準答案。 電磁相容題要抓濾波、屏蔽、接地、扼流與接收機抗干擾能力；正解是能降低不必要耦合或失真的作法。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-electromagnetic_compatibility-010",
@@ -16068,7 +16609,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）接收機無法阻擋AM或FM頻段以外的強信號。本題重點是調變方式或發射模式的特性；不同模式在頻寬、語音、資料或摩斯通訊上的用途不同。 電磁相容題要抓濾波、屏蔽、接地、扼流與接收機抗干擾能力；正解是能降低不必要耦合或失真的作法。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-001",
@@ -16097,7 +16639,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）嚴重降低、阻礙或重覆性中斷操作於符合法規電臺的無線電通訊服務。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-002",
@@ -16126,7 +16669,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）無線電導航。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-003",
@@ -16155,7 +16699,8 @@
         }
       ],
       "answer": "2",
-      "explanation": ""
+      "explanation": "官方答案為（2）任何時候都不可以。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-004",
@@ -16184,7 +16729,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）停止操作並採取行動消除任何有害的干擾。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-005",
@@ -16213,7 +16759,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）麥克風的增益過強導致過度偏移。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-006",
@@ -16242,7 +16789,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）應該遵循日常的禮儀，但是沒有電臺有絕對的優先。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-007",
@@ -16271,7 +16819,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）QRM。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-008",
@@ -16300,7 +16849,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）把噪音消除器打開。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-009",
@@ -16329,7 +16879,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）2400 赫。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-010",
@@ -16358,7 +16909,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）500 赫。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-011",
@@ -16387,7 +16939,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-012",
@@ -16416,7 +16969,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）在電話機裝一個射頻濾波器。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-013",
@@ -16445,7 +16999,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）在受影響的接收機天線輸入端用濾波器阻擋業餘信號。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-014",
@@ -16474,7 +17029,8 @@
         }
       ],
       "answer": "1",
-      "explanation": ""
+      "explanation": "官方答案為（1）確保您的電臺工作正常情形下，不會對調諧到同一頻道的你的收音機或電視機造成干擾。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-015",
@@ -16503,7 +17059,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-016",
@@ -16532,7 +17089,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）以上皆是。題目中的多個敘述都符合題意，所以答案為以上皆是；作答時不要只檢查其中一個選項。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-017",
@@ -16561,7 +17119,8 @@
         }
       ],
       "answer": "4",
-      "explanation": ""
+      "explanation": "官方答案為（4）確保正確安裝所有電視同軸連接器。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     },
     {
       "id": "radio-level3-rf_interference_prevention-018",
@@ -16590,7 +17149,8 @@
         }
       ],
       "answer": "3",
-      "explanation": ""
+      "explanation": "官方答案為（3）無線電測向。本題重點是干擾來源與抑制方式；常見作法包含濾波、屏蔽、接地、鐵氧體扼流與改善設備抗干擾能力。 干擾排除題要先判斷干擾來源，再用濾波、接地、屏蔽、測向或合法協調方式處理。",
+      "analysisStatus": "concept"
     }
   ]
 }
