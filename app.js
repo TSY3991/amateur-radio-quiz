@@ -1061,10 +1061,12 @@ function setupQuestionBankFilter() {
 function renderBankRuleSummary() {
   els.bankRuleSummary.innerHTML = "";
 
-  const note = document.createElement("p");
-  note.className = "bank-rule-note";
-  note.textContent = `本測試題庫共分 ${EXAM_RULES.categories.length} 部分；模擬考固定抽 ${EXAM_RULES.totalQuestions} 題，依官方題組比例抽題。`;
-  els.bankRuleSummary.append(note);
+  const details = document.createElement("details");
+  details.className = "bank-rule-details";
+
+  const summary = document.createElement("summary");
+  summary.textContent = `題庫分布與抽題比例：共 ${EXAM_RULES.categories.length} 類，模擬考 ${EXAM_RULES.totalQuestions} 題`;
+  details.append(summary);
 
   const grid = document.createElement("div");
   grid.className = "bank-rule-grid";
@@ -1083,13 +1085,14 @@ function renderBankRuleSummary() {
     grid.append(item);
   }
 
-  els.bankRuleSummary.append(grid);
+  details.append(grid);
+  els.bankRuleSummary.append(details);
 }
 
 function scrollQuestionBankToTop() {
-  if (!els.questionBankPanel.scrollIntoView) return;
+  if (!els.questionBankList.scrollIntoView) return;
   window.requestAnimationFrame(() => {
-    els.questionBankPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    els.questionBankList.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 }
 

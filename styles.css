@@ -757,6 +757,28 @@ h1 {
   margin-bottom: 12px;
 }
 
+.bank-rule-details {
+  border: 1px solid rgba(15, 118, 110, 0.18);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffffff 0%, var(--accent-soft) 100%);
+  color: var(--accent-strong);
+  box-shadow: 0 8px 18px rgba(15, 118, 110, 0.08);
+}
+
+.bank-rule-details[open] {
+  border-radius: 8px;
+}
+
+.bank-rule-details summary {
+  min-height: 38px;
+  padding: 9px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.45;
+  list-style-position: inside;
+}
+
 .bank-rule-note {
   margin: 0;
   color: var(--text);
@@ -768,6 +790,7 @@ h1 {
 .bank-rule-grid {
   display: grid;
   gap: 6px;
+  padding: 0 10px 10px;
 }
 
 .bank-rule-item {
