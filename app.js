@@ -1086,7 +1086,14 @@ function renderBankRuleSummary() {
   els.bankRuleSummary.append(grid);
 }
 
-function renderQuestionBank() {
+function scrollQuestionBankToTop() {
+  if (!els.questionBankPanel.scrollIntoView) return;
+  window.requestAnimationFrame(() => {
+    els.questionBankPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+function renderQuestionBank({ scrollToTop = false } = {}) {
   setupQuestionBankFilter();
   renderBankRuleSummary();
   const selectedCategory = state.bankCategoryKey;
@@ -1141,6 +1148,8 @@ function renderQuestionBank() {
     item.append(meta, title, options);
     els.questionBankList.append(item);
   }
+
+  if (scrollToTop) scrollQuestionBankToTop();
 }
 
 function renderStats() {
@@ -1310,19 +1319,19 @@ els.bankCategoryFilter.addEventListener("change", () => {
   if (state.mode !== "bank") return;
   state.bankCategoryKey = els.bankCategoryFilter.value;
   state.bankPage = 1;
-  renderQuestionBank();
+  renderQuestionBank({ scrollToTop: true });
 });
 
 els.bankPrevPageButton.addEventListener("click", () => {
   if (state.mode !== "bank") return;
   state.bankPage = Math.max(1, state.bankPage - 1);
-  renderQuestionBank();
+  renderQuestionBank({ scrollToTop: true });
 });
 
 els.bankNextPageButton.addEventListener("click", () => {
   if (state.mode !== "bank") return;
   state.bankPage += 1;
-  renderQuestionBank();
+  renderQuestionBank({ scrollToTop: true });
 });
 
 els.clearStatsButton.addEventListener("click", () => {
