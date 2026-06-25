@@ -456,6 +456,18 @@ h1 {
   line-height: 1.5;
 }
 
+.result-actions {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.result-actions button {
+  min-height: 40px;
+  border-radius: 999px;
+  font-weight: 900;
+}
+
 .quiz-panel {
   padding: 28px;
   border-color: rgba(15, 118, 110, 0.18);
