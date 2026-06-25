@@ -650,9 +650,14 @@ function formatSessionDate(dateText) {
 
 function getQuestionHistoryRisk(question) {
   const stats = state.statsRecords.questions?.[question.id];
-  if (!stats || !stats.wrong || !stats.attempts) return "";
+  const wrongRecord = state.wrongRecords[question.id];
+
+  if (!stats || !stats.wrong || !stats.attempts) {
+    return wrongRecord?.wrongCount ? `提醒：這題曾錯 ${wrongRecord.wrongCount} 次` : "";
+  }
+
   const rate = Math.round((stats.wrong / stats.attempts) * 100);
-  return `歷史錯題率 ${rate}%（錯 ${stats.wrong}/${stats.attempts}）`;
+  return `提醒：這題歷史錯誤率 ${rate}%（錯 ${stats.wrong}/${stats.attempts}）`;
 }
 
 function updateWrongBookBadge() {
