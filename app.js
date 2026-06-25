@@ -833,7 +833,7 @@ function updateProgress() {
   els.resultLabel.textContent = state.endedByTimeout ? "時間到自動交卷" : (isPracticeSession ? "練習結果" : "交卷結果");
   els.resultScore.textContent = `答對 ${result.score} 題 / 答錯 ${result.wrong} 題 / ${resultText}`;
   els.resultDetail.textContent = isPracticeSession
-    ? `${state.endedByTimeout ? "時間到，系統已自動交卷。" : ""}已作答 ${answered} 題，未作答 ${result.total - answered} 題。本次錯題已依完成時間加入錯題本，可從錯題本複習同一次範圍。`
+    ? `${state.endedByTimeout ? "時間到，系統已自動交卷。" : ""}已作答 ${answered} 題，未作答 ${result.total - answered} 題。錯題含答錯與未作答；本次錯題已依完成時間加入錯題本，可從錯題本複習同一次範圍。`
     : `${state.endedByTimeout ? "時間到，系統已自動交卷。" : ""}及格門檻 ${EXAM_RULES.passingScore} 題，已作答 ${answered} 題，未作答 ${result.total - answered} 題。錯題已更新至本機錯題本，統計已更新。`;
   renderResultActions(isPracticeSession, wrongIds);
 }
@@ -844,7 +844,7 @@ function renderFeedback(question) {
 
   if (state.mode === "practice" || state.mode === "wrongPractice") {
     if (!selected) {
-      setFeedbackText("選擇答案後立即顯示正解與解析");
+      setFeedbackText("選擇答案後立即顯示正解與解析，並鎖定本題作答");
       return;
     }
 
@@ -906,7 +906,7 @@ function renderOptions(question) {
     input.name = "answer";
     input.value = option.key;
     input.checked = !shouldHideSelectedWrong && selected === option.key;
-    input.disabled = state.submitted;
+    input.disabled = state.submitted || isPracticeReview;
     input.addEventListener("change", () => {
       state.answers[question.id] = option.key;
       render();
