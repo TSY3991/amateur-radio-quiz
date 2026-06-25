@@ -3,6 +3,7 @@ const STATS_KEY = "amateurRadioQuiz.stats.v1";
 const BANK_VIEW_KEY = "amateurRadioQuiz.bankView.v1";
 const EXAM_DURATION_SECONDS = 40 * 60;
 const BANK_PAGE_SIZE = 20;
+const FIGURE_ASSET_VERSION = "20260625-1";
 
 const ANALYSIS_STATUS_LABELS = {
   source_based: "有來源解析",
@@ -92,6 +93,7 @@ const els = {
   categoryText: document.querySelector("#categoryText"),
   historyRiskText: document.querySelector("#historyRiskText"),
   questionTitle: document.querySelector("#questionTitle"),
+  questionFigure: document.querySelector("#questionFigure"),
   optionsForm: document.querySelector("#optionsForm"),
   feedbackText: document.querySelector("#feedbackText"),
   prevButton: document.querySelector("#prevButton"),
@@ -471,6 +473,35 @@ function getAnalysisStatusText(question) {
   const statusLabel = ANALYSIS_STATUS_LABELS[statusKey] || statusKey;
   const sourceLabel = (question.sourceLabel || question.analysisSource || "").trim();
   return sourceLabel ? `解析狀態：${statusLabel}｜${sourceLabel}` : `解析狀態：${statusLabel}`;
+}
+
+function getQuestionFigureId(question) {
+  if (!question?.figure) return "";
+  if (typeof question.figure === "string") return question.figure;
+  return question.figure.id || "";
+}
+
+function createQuestionFigure(question) {
+  const figureId = getQuestionFigureId(question);
+  if (!figureId) return null;
+
+  const figure = document.createElement("figure");
+  figure.className = "question-figure";
+
+  const image = document.createElement("img");
+  image.src = `assets/figures/${figureId}.png?v=${FIGURE_ASSET_VERSION}`;
+  image.alt = `圖 ${figureId}`;
+  image.loading = "lazy";
+
+  figure.append(image);
+  return figure;
+}
+
+function renderCurrentQuestionFigure(question) {
+  els.questionFigure.innerHTML = "";
+  const figure = createQuestionFigure(question);
+  els.questionFigure.hidden = !figure;
+  if (figure) els.questionFigure.append(figure);
 }
 
 function resetFeedback(tone = "") {
@@ -928,6 +959,7 @@ function render() {
     els.questionTitle.textContent = state.mode === "practice" ? "請至少選擇一個練習範圍" : "找不到題庫資料";
     els.categoryText.textContent = "-";
     els.historyRiskText.hidden = true;
+    renderCurrentQuestionFigure(null);
     els.optionsForm.innerHTML = "";
     setFeedbackText(state.mode === "practice" ? "可按全選恢復全部範圍，或勾選想練習的分類。" : "");
     updateProgress();
@@ -941,6 +973,7 @@ function render() {
   els.historyRiskText.textContent = historyRiskText;
   els.historyRiskText.hidden = !historyRiskText;
   els.questionTitle.textContent = question.question;
+  renderCurrentQuestionFigure(question);
   renderOptions(question);
   renderFeedback(question);
   updateProgress();
@@ -1016,6 +1049,8 @@ function renderWrongBookItem(entry) {
   answer.className = "wrongbook-answer";
   answer.textContent = `正解 ${getAnswerText(question)}`;
 
+  const figure = createQuestionFigure(question);
+
   const options = document.createElement("ul");
   options.className = "wrongbook-options";
   for (const option of question.options) {
@@ -1025,7 +1060,9 @@ function renderWrongBookItem(entry) {
     options.append(optionItem);
   }
 
-  item.append(head, meta, answer, options);
+  item.append(head, meta);
+  if (figure) item.append(figure);
+  item.append(answer, options);
   return item;
 }
 
@@ -1213,7 +1250,11 @@ function renderQuestionBank({ scrollToTop = false } = {}) {
       options.append(optionItem);
     }
 
-    item.append(meta, title, options);
+    const figure = createQuestionFigure(question);
+
+    item.append(meta, title);
+    if (figure) item.append(figure);
+    item.append(options);
     els.questionBankList.append(item);
   }
 
@@ -1314,7 +1355,7 @@ async function loadQuestions() {
     state.wrongRecords = loadWrongRecords();
     state.statsRecords = loadStatsRecords();
     loadBankView();
-    const response = await fetch("data/amateurRadioLevel3.generated.json?v=20260625-1");
+    const response = await fetch("data/amateurRadioLevel3.generated.json?v=20260625-2");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const quiz = await response.json();
     startNewExam(quiz.questions || []);

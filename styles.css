@@ -547,6 +547,26 @@ h1 {
   line-height: 1.5;
 }
 
+.question-figure-slot {
+  margin: -6px 0 22px;
+}
+
+.question-figure {
+  margin: 0 0 16px;
+  padding: 14px;
+  border: 1px solid rgba(38, 50, 74, 0.16);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(38, 50, 74, 0.07);
+}
+
+.question-figure img {
+  display: block;
+  width: 100%;
+  max-height: 430px;
+  object-fit: contain;
+}
+
 .options-list {
   display: grid;
   gap: 12px;

@@ -13130,7 +13130,8 @@
       ],
       "answer": "1",
       "explanation": "官方答案為（1）電阻器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
-      "analysisStatus": "concept"
+      "analysisStatus": "concept",
+      "figure": "T-1"
     },
     {
       "id": "radio-level3-radio_system_principles-076",
@@ -13160,7 +13161,8 @@
       ],
       "answer": "2",
       "explanation": "官方答案為（2）電晶體。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
-      "analysisStatus": "concept"
+      "analysisStatus": "concept",
+      "figure": "T-1"
     },
     {
       "id": "radio-level3-radio_system_principles-077",
@@ -13190,7 +13192,8 @@
       ],
       "answer": "3",
       "explanation": "官方答案為（3）燈。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
-      "analysisStatus": "concept"
+      "analysisStatus": "concept",
+      "figure": "T-1"
     },
     {
       "id": "radio-level3-radio_system_principles-078",
@@ -13220,7 +13223,8 @@
       ],
       "answer": "3",
       "explanation": "官方答案為（3）電池。本題重點是電源與供電安全；要注意極性、電壓型態、電池狀態與設備可承受的供電條件。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
-      "analysisStatus": "concept"
+      "analysisStatus": "concept",
+      "figure": "T-1"
     },
     {
       "id": "radio-level3-radio_system_principles-079",
@@ -13250,7 +13254,8 @@
       ],
       "answer": "2",
       "explanation": "官方答案為（2）電容器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
-      "analysisStatus": "concept"
+      "analysisStatus": "concept",
+      "figure": "T-2"
     },
     {
       "id": "radio-level3-radio_system_principles-080",
@@ -13280,7 +13285,8 @@
       ],
       "answer": "4",
       "explanation": "官方答案為（4）發光二極管。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
-      "analysisStatus": "concept"
+      "analysisStatus": "concept",
+      "figure": "T-2"
     },
     {
       "id": "radio-level3-radio_system_principles-081",
@@ -13310,7 +13316,8 @@
       ],
       "answer": "3",
       "explanation": "官方答案為（3）可變電阻器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
-      "analysisStatus": "concept"
+      "analysisStatus": "concept",
+      "figure": "T-2"
     },
     {
       "id": "radio-level3-radio_system_principles-082",
@@ -13340,7 +13347,8 @@
       ],
       "answer": "4",
       "explanation": "官方答案為（4）變壓器。本題重點是電源與供電安全；要注意極性、電壓型態、電池狀態與設備可承受的供電條件。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
-      "analysisStatus": "concept"
+      "analysisStatus": "concept",
+      "figure": "T-2"
     },
     {
       "id": "radio-level3-radio_system_principles-083",
@@ -13370,7 +13378,8 @@
       ],
       "answer": "4",
       "explanation": "官方答案為（4）可變電感器。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
-      "analysisStatus": "concept"
+      "analysisStatus": "concept",
+      "figure": "T-3"
     },
     {
       "id": "radio-level3-radio_system_principles-084",
@@ -13400,7 +13409,8 @@
       ],
       "answer": "1",
       "explanation": "官方答案為（1）天線。本題重點是天線、饋線與阻抗匹配；正確匹配與良好接地能降低損耗、反射與干擾。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
-      "analysisStatus": "concept"
+      "analysisStatus": "concept",
+      "figure": "T-3"
     },
     {
       "id": "radio-level3-radio_system_principles-085",
@@ -13550,7 +13560,8 @@
       ],
       "answer": "1",
       "explanation": "官方答案為（1）單刀單擲。系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
-      "analysisStatus": "concept"
+      "analysisStatus": "concept",
+      "figure": "T-2"
     },
     {
       "id": "radio-level3-radio_system_principles-090",
@@ -13760,7 +13771,8 @@
       ],
       "answer": "3",
       "explanation": "官方答案為（3）控制電流的流動。本題重點是基本電學量與單位；先確認題幹問的是哪一個物理量，再對應正確單位或關係。 系統原理題要抓電學單位、元件功能、天線、調變、接收與傳輸原理；正解對應題幹中的技術概念。",
-      "analysisStatus": "concept"
+      "analysisStatus": "concept",
+      "figure": "T-1"
     },
     {
       "id": "radio-level3-radio_system_principles-097",

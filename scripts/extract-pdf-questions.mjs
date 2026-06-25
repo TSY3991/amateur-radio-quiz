@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 
-const DEFAULT_SOURCE_PDF = "D:/Downloads/三等業餘無線電人員資格測試題庫.pdf";
+const DEFAULT_SOURCE_PDF = "source/三等業餘無線電人員資格測試題庫.pdf";
 const DEFAULT_OUTPUT_JSON = "data/amateurRadioLevel3.generated.json";
 const DEFAULT_PDFJS_PATH =
   "../nkutve-system/frontend-app/node_modules/pdfjs-dist/legacy/build/pdf.mjs";
