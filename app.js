@@ -5,13 +5,6 @@ const EXAM_DURATION_SECONDS = 40 * 60;
 const BANK_PAGE_SIZE = 20;
 const FIGURE_ASSET_VERSION = "20260625-1";
 
-const ANALYSIS_STATUS_LABELS = {
-  source_based: "有來源解析",
-  concept: "概念說明",
-  pending: "解析待補",
-  needs_review: "待確認"
-};
-
 const EXAM_RULES = {
   totalQuestions: 35,
   passingScore: 25,
@@ -464,15 +457,22 @@ function getAnswerText(question, key = question.answer) {
 
 function getExplanationText(question) {
   const explanation = (question.explanation || "").trim();
-  return explanation ? `解析：${explanation}` : "解析待補";
+  if (!explanation || isGenericExplanation(explanation)) {
+    return "逐題解析待補：目前僅確認官方答案，尚未補上為什麼此選項正確。";
+  }
+  return `解析：${explanation}`;
 }
 
-function getAnalysisStatusText(question) {
-  const explanation = (question.explanation || "").trim();
-  const statusKey = question.analysisStatus || question.analysisType || (explanation ? "concept" : "pending");
-  const statusLabel = ANALYSIS_STATUS_LABELS[statusKey] || statusKey;
-  const sourceLabel = (question.sourceLabel || question.analysisSource || "").trim();
-  return sourceLabel ? `解析狀態：${statusLabel}｜${sourceLabel}` : `解析狀態：${statusLabel}`;
+function isGenericExplanation(explanation) {
+  return [
+    "本題重點是",
+    "法規題要",
+    "通訊方法題要",
+    "系統原理題要",
+    "安全題要",
+    "電磁相容性題要",
+    "射頻干擾題要"
+  ].some((phrase) => explanation.includes(phrase));
 }
 
 function getQuestionFigureId(question) {
@@ -544,13 +544,10 @@ function createFeedbackRow(labelText, contentText, rowClass) {
   return row;
 }
 
-function setFeedbackDetails(mainText, explanationText, tone, summaryText = "", analysisStatusText = "") {
+function setFeedbackDetails(mainText, explanationText, tone, summaryText = "") {
   resetFeedback(tone);
 
   els.feedbackText.append(createFeedbackRow("答案", mainText, "feedback-answer"));
-  if (analysisStatusText) {
-    els.feedbackText.append(createFeedbackRow("狀態", analysisStatusText, "feedback-analysis-status"));
-  }
   els.feedbackText.append(createFeedbackRow("解析", explanationText, "feedback-explanation"));
 
   if (summaryText) {
@@ -881,12 +878,11 @@ function renderFeedback(question) {
 
     const answerText = getAnswerText(question);
     const explanationText = getExplanationText(question);
-    const analysisStatusText = getAnalysisStatusText(question);
 
     if (selected === question.answer) {
-      setFeedbackDetails(buildAnswerFeedbackParts("答對。"), explanationText, "success", "", analysisStatusText);
+      setFeedbackDetails(buildAnswerFeedbackParts("答對。"), explanationText, "success");
     } else {
-      setFeedbackDetails(buildAnswerFeedbackParts("答錯。", answerText), explanationText, "danger", "", analysisStatusText);
+      setFeedbackDetails(buildAnswerFeedbackParts("答錯。", answerText), explanationText, "danger");
     }
     return;
   }
@@ -900,17 +896,16 @@ function renderFeedback(question) {
   const summary = `${result.passed ? "合格" : "未合格"}：答對 ${result.score} 題，答錯 ${result.wrong} 題`;
   const answerText = getAnswerText(question);
   const explanationText = getExplanationText(question);
-  const analysisStatusText = getAnalysisStatusText(question);
 
   if (!selected) {
-    setFeedbackDetails(buildAnswerFeedbackParts("未作答。", answerText), explanationText, "danger", summary, analysisStatusText);
+    setFeedbackDetails(buildAnswerFeedbackParts("未作答。", answerText), explanationText, "danger", summary);
     return;
   }
 
   if (selected === question.answer) {
-    setFeedbackDetails(buildAnswerFeedbackParts("答對。"), explanationText, "success", summary, analysisStatusText);
+    setFeedbackDetails(buildAnswerFeedbackParts("答對。"), explanationText, "success", summary);
   } else {
-    setFeedbackDetails(buildAnswerFeedbackParts("答錯。", answerText), explanationText, "danger", summary, analysisStatusText);
+    setFeedbackDetails(buildAnswerFeedbackParts("答錯。", answerText), explanationText, "danger", summary);
   }
 }
 

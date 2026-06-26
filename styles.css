@@ -664,11 +664,6 @@ h1 {
   background: var(--warning-soft);
 }
 
-.feedback-analysis-status {
-  border-color: rgba(38, 50, 74, 0.18);
-  background: #ffffff;
-}
-
 .feedback-summary {
   border-color: rgba(38, 50, 74, 0.18);
   background: var(--ink-soft);
@@ -701,11 +696,6 @@ h1 {
   color: #ffffff;
 }
 
-.feedback-analysis-status .feedback-label {
-  background: var(--ink);
-  color: #ffffff;
-}
-
 .feedback-content {
   min-width: 0;
   overflow-wrap: anywhere;
@@ -730,7 +720,6 @@ h1 {
 }
 
 .feedback-explanation .feedback-content,
-.feedback-analysis-status .feedback-content,
 .feedback-summary .feedback-content {
   color: var(--muted);
   font-size: 14px;
