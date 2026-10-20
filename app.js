@@ -1352,7 +1352,7 @@ async function loadQuestions() {
     state.wrongRecords = loadWrongRecords();
     state.statsRecords = loadStatsRecords();
     loadBankView();
-    const response = await fetch("data/amateurRadioLevel3.generated.json?v=20261020-2");
+    const response = await fetch("data/amateurRadioLevel3.generated.json?v=20261020-3");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const quiz = await response.json();
     startNewExam(quiz.questions || []);
