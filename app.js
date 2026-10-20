@@ -471,7 +471,9 @@ function isGenericExplanation(explanation) {
     "系統原理題要",
     "安全題要",
     "電磁相容性題要",
-    "射頻干擾題要"
+    "射頻干擾題要",
+    "干擾排除題要",
+    "題目中的多個敘述都符合題意"
   ].some((phrase) => explanation.includes(phrase));
 }
 
@@ -1350,7 +1352,7 @@ async function loadQuestions() {
     state.wrongRecords = loadWrongRecords();
     state.statsRecords = loadStatsRecords();
     loadBankView();
-    const response = await fetch("data/amateurRadioLevel3.generated.json?v=20260625-2");
+    const response = await fetch("data/amateurRadioLevel3.generated.json?v=20261020-1");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const quiz = await response.json();
     startNewExam(quiz.questions || []);
