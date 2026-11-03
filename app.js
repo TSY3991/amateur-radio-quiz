@@ -887,12 +887,12 @@ function setModePresentation(mode) {
   els.examModeButton.className = mode === "exam" ? "mode-tab active" : "mode-tab";
   els.practiceModeButton.className = isPractice ? "mode-tab active" : "mode-tab";
   els.bankModeButton.className = isBank ? "mode-tab active" : "mode-tab";
-  els.wrongBookModeButton.className = isWrongBook ? "mode-tab active" : "mode-tab";
+  els.wrongBookModeButton.className = isWrongBook || mode === "wrongPractice" ? "mode-tab active" : "mode-tab";
   els.statsModeButton.className = isStats ? "mode-tab active" : "mode-tab";
   els.examModeButton.setAttribute("aria-current", mode === "exam" ? "page" : "false");
   els.practiceModeButton.setAttribute("aria-current", isPractice ? "page" : "false");
   els.bankModeButton.setAttribute("aria-current", isBank ? "page" : "false");
-  els.wrongBookModeButton.setAttribute("aria-current", isWrongBook ? "page" : "false");
+  els.wrongBookModeButton.setAttribute("aria-current", isWrongBook || mode === "wrongPractice" ? "page" : "false");
   els.statsModeButton.setAttribute("aria-current", isStats ? "page" : "false");
   const modeLabels = { exam: "模擬考", practice: "題庫練習", wrongPractice: "錯題練習", wrongBook: "錯題本", stats: "統計", bank: "瀏覽題庫" };
   document.querySelector("#modeEyebrow").textContent = modeLabels[mode] || "測驗練習";
