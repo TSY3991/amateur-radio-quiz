@@ -4,9 +4,9 @@
   --panel: #fffdf8;
   --panel-soft: #fbf7ef;
   --text: #082528;
-  --muted: #727978;
+  --muted: #5e6966;
   --line: rgba(32, 42, 40, 0.14);
-  --accent: #0e8f88;
+  --accent: #07635e;
   --accent-strong: #07635e;
   --accent-soft: #dff3ee;
   --ink: #26324a;
@@ -1402,3 +1402,16 @@ h1 {
     min-height: 44px;
   }
 }
+
+@media (prefers-color-scheme:dark) {
+ :root { color-scheme:dark; --bg:#102527; --panel:#193336; --panel-soft:#203d40; --text:#f6f3e9; --ink:#f6f3e9; --ink-soft:#203d40; --muted:#b5c9c4; --line:rgba(223,243,238,.24); --accent:#8ee0cf; --accent-strong:#a6eadb; --accent-soft:#204d48; --gold:#ffcf70; --gold-soft:#493b20; --warning:#ffcf70; --warning-soft:#493b20; --danger:#ffadb2; --danger-soft:#502f34; --success:#98e2b4; --success-soft:#204d36; --shadow:0 20px 46px rgba(0,0,0,.38); }
+ html,body { color-scheme:dark; background:#102527; color:#f6f3e9; }
+ :is(.quiz-panel,.score-card,.status-panel,.exam-rules,.mode-tabs,.bank-navigation,.quiz-actions,.question-card,.result-card,.history-card,.wrong-question-card) { background-color:#193336; color:#f6f3e9; border-color:#526b6b; }
+ .option-row { background:#203d40; color:#f6f3e9; border-color:#526b6b; box-shadow:0 8px 20px rgba(0,0,0,.2); }
+ .option-row:hover,.option-row:has(input:checked) { background:#204d48; color:#f6f3e9; border-color:#8ee0cf; }
+ .quiz-actions button:not(.primary) { color:#d4e2de; background:#203d40; border-color:#526b6b; } .quiz-actions button.primary { color:#102527; background:linear-gradient(#8ee0cf,#a6eadb); } .primary { color:#102527; } :is(input,select,textarea) { background:#102527; color:#f6f3e9; border-color:#526b6b; } a { color:#8ee0cf; }
+}
+.skip-link { position:fixed; top:calc(12px + env(safe-area-inset-top,0px)); left:calc(12px + env(safe-area-inset-left,0px)); z-index:100; min-height:44px; padding:10px 16px; border-radius:10px; background:#07635e; color:#fff; font-weight:800; transform:translateY(-180%); }
+.skip-link:focus-visible { transform:none; outline:3px solid #ffcf70; outline-offset:3px; }
+.bank-navigation { top:env(safe-area-inset-top,0px); } .quiz-actions button { min-height:44px; }
+@media (max-width:820px) { .quiz-shell { padding-bottom:calc(96px + env(safe-area-inset-bottom,0px)); } .quiz-actions { bottom:calc(10px + env(safe-area-inset-bottom,0px)); left:calc(9px + env(safe-area-inset-left,0px)); right:calc(9px + env(safe-area-inset-right,0px)); } }
