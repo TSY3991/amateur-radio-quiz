@@ -1369,3 +1369,36 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+@media (max-width: 640px) {
+  .score-card.score-pending {
+    display: none;
+  }
+
+  .mode-tabs {
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    scroll-snap-type: x mandatory;
+  }
+
+  .mode-tab {
+    flex: 0 0 auto;
+    min-width: 104px;
+    scroll-snap-align: start;
+  }
+
+  .quiz-shell {
+    padding-bottom: calc(112px + env(safe-area-inset-bottom));
+  }
+
+  .quiz-actions {
+    bottom: calc(8px + env(safe-area-inset-bottom));
+  }
+
+  .practice-checks label,
+  .option-row {
+    min-height: 44px;
+  }
+}

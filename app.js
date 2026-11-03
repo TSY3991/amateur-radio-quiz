@@ -1,6 +1,7 @@
 const STORAGE_KEY = "amateurRadioQuiz.wrongBook.v1";
 const STATS_KEY = "amateurRadioQuiz.stats.v1";
 const BANK_VIEW_KEY = "amateurRadioQuiz.bankView.v1";
+const SESSION_KEY = "amateurRadioQuiz.session.v1";
 const EXAM_DURATION_SECONDS = 40 * 60;
 const BANK_PAGE_SIZE = 20;
 const FIGURE_ASSET_VERSION = "20260625-1";
@@ -27,6 +28,7 @@ const state = {
   answers: {},
   submitted: false,
   remainingSeconds: EXAM_DURATION_SECONDS,
+  deadline: 0,
   sessionStartedAt: 0,
   endedByTimeout: false,
   timerId: null,
@@ -179,6 +181,70 @@ function updateTimerDisplay() {
   els.timerText.textContent = formatDuration(state.remainingSeconds);
 }
 
+function saveSession() {
+  if (state.submitted || !state.questions.length || !["exam", "practice", "wrongPractice"].includes(state.mode)) return;
+  const storage = getStorage();
+  if (!storage) return;
+  try {
+    storage.setItem(SESSION_KEY, JSON.stringify({
+      mode: state.mode,
+      questionIds: state.questions.map((question) => question.id),
+      answers: state.answers,
+      currentIndex: state.currentIndex,
+      deadline: state.deadline
+    }));
+  } catch {
+    // Storage may be unavailable or full; the current session remains usable.
+  }
+}
+
+function clearSavedSession() {
+  const storage = getStorage();
+  if (!storage) return;
+  try {
+    storage.removeItem(SESSION_KEY);
+  } catch {
+    // Ignore storage restrictions.
+  }
+}
+
+function restoreSession(questionBank) {
+  const storage = getStorage();
+  if (!storage) return false;
+  let saved;
+  try {
+    saved = JSON.parse(storage.getItem(SESSION_KEY) || "null");
+  } catch {
+    clearSavedSession();
+    return false;
+  }
+  if (!saved || !["exam", "practice", "wrongPractice"].includes(saved.mode) || !Array.isArray(saved.questionIds)) return false;
+  const questionById = new Map(questionBank.map((question) => [question.id, question]));
+  const questions = saved.questionIds.map((id) => questionById.get(id));
+  if (!questions.length || questions.some((question) => !question)) {
+    clearSavedSession();
+    return false;
+  }
+  if (!window.confirm("發現尚未交卷的作答進度，要繼續上次作答嗎？選擇取消會重新開始。")) {
+    clearSavedSession();
+    return false;
+  }
+  state.mode = saved.mode;
+  state.questions = questions;
+  state.answers = saved.answers && typeof saved.answers === "object" ? saved.answers : {};
+  state.currentIndex = Math.min(questions.length - 1, Math.max(0, Number(saved.currentIndex) || 0));
+  state.deadline = Number(saved.deadline) || Date.now();
+  state.remainingSeconds = Math.max(0, Math.ceil((state.deadline - Date.now()) / 1000));
+  state.submitted = false;
+  state.endedByTimeout = false;
+  state.sessionStartedAt = Date.now();
+  if (state.mode === "practice") {
+    state.practiceCategoryKeys = [...new Set(questions.map((question) => question.categoryKey))];
+    els.practiceCategoryInputs.forEach((input) => { input.checked = state.practiceCategoryKeys.includes(input.value); });
+  }
+  return true;
+}
+
 function stopTimer() {
   if (!state.timerId) return;
   window.clearInterval(state.timerId);
@@ -196,6 +262,7 @@ function finishSession({ timedOut = false } = {}) {
   state.submitted = true;
   state.endedByTimeout = timedOut;
   stopTimer();
+  clearSavedSession();
   render();
 
   if (session && (state.mode === "practice" || state.mode === "wrongPractice") && els.resultPanel.scrollIntoView) {
@@ -210,6 +277,7 @@ function finishSession({ timedOut = false } = {}) {
 function startTimer() {
   stopTimer();
   state.remainingSeconds = EXAM_DURATION_SECONDS;
+  state.deadline = Date.now() + state.remainingSeconds * 1000;
   updateTimerDisplay();
   state.timerId = window.setInterval(() => {
     if (state.submitted) {
@@ -217,13 +285,27 @@ function startTimer() {
       return;
     }
 
-    state.remainingSeconds = Math.max(0, state.remainingSeconds - 1);
+    state.remainingSeconds = Math.max(0, Math.ceil((state.deadline - Date.now()) / 1000));
     updateTimerDisplay();
+    saveSession();
 
     if (state.remainingSeconds === 0) {
       finishSession({ timedOut: true });
     }
   }, 1000);
+  saveSession();
+}
+
+function resumeTimer() {
+  stopTimer();
+  const tick = () => {
+    state.remainingSeconds = Math.max(0, Math.ceil((state.deadline - Date.now()) / 1000));
+    updateTimerDisplay();
+    saveSession();
+    if (state.remainingSeconds === 0) finishSession({ timedOut: true });
+  };
+  tick();
+  if (!state.submitted) state.timerId = window.setInterval(tick, 1000);
 }
 
 function shuffle(items) {
@@ -814,6 +896,8 @@ function setMode(mode) {
   els.bankModeButton.setAttribute("aria-current", isBank ? "page" : "false");
   els.wrongBookModeButton.setAttribute("aria-current", isWrongBook ? "page" : "false");
   els.statsModeButton.setAttribute("aria-current", isStats ? "page" : "false");
+  const modeLabels = { exam: "模擬考", practice: "題庫練習", wrongPractice: "錯題練習", wrongBook: "錯題本", stats: "統計", bank: "瀏覽題庫" };
+  document.querySelector("#modeEyebrow").textContent = modeLabels[mode] || "測驗練習";
 
   if (mode === "exam") {
     startNewExam();
@@ -848,6 +932,7 @@ function updateProgress() {
 
   if (!state.submitted) {
     els.scoreText.textContent = "尚未交卷";
+    els.scoreText.closest(".score-card")?.classList.add("score-pending");
     els.resultPanel.hidden = true;
     els.resultActions.innerHTML = "";
     return;
@@ -858,6 +943,7 @@ function updateProgress() {
   const resultText = isPracticeSession ? "完成" : (result.passed ? "合格" : "未合格");
   const wrongIds = getCurrentWrongQuestionIds();
   els.scoreText.textContent = `答對 ${result.score}｜答錯 ${result.wrong}｜${resultText}`;
+  els.scoreText.closest(".score-card")?.classList.remove("score-pending");
   els.resultPanel.hidden = false;
   els.resultPanel.className = `result-panel ${isPracticeSession || result.passed ? "pass" : "fail"}`;
   els.resultLabel.textContent = state.endedByTimeout ? "時間到自動交卷" : (isPracticeSession ? "練習結果" : "交卷結果");
@@ -974,6 +1060,7 @@ function render() {
   renderOptions(question);
   renderFeedback(question);
   updateProgress();
+  saveSession();
 
   els.prevButton.disabled = state.currentIndex === 0;
   els.nextButton.disabled = state.currentIndex === state.questions.length - 1;
@@ -1355,7 +1442,16 @@ async function loadQuestions() {
     const response = await fetch("data/amateurRadioLevel3.generated.json?v=20261020-3");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const quiz = await response.json();
-    startNewExam(quiz.questions || []);
+    state.questionBank = quiz.questions || [];
+    const resumed = restoreSession(state.questionBank);
+    if (resumed) {
+      els.examModeButton.className = state.mode === "exam" ? "mode-tab active" : "mode-tab";
+      els.practiceModeButton.className = state.mode === "practice" ? "mode-tab active" : "mode-tab";
+      els.practiceControls.hidden = state.mode !== "practice";
+      resumeTimer();
+    } else {
+      startNewExam(state.questionBank);
+    }
     updateWrongBookBadge();
     render();
   } catch (error) {
@@ -1364,6 +1460,21 @@ async function loadQuestions() {
     console.error(error);
   }
 }
+
+window.addEventListener("beforeunload", (event) => {
+  if (state.submitted || !state.questions.length || !["exam", "practice", "wrongPractice"].includes(state.mode)) return;
+  saveSession();
+  event.preventDefault();
+  event.returnValue = "";
+});
+
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState !== "visible" || state.submitted || !state.deadline) return;
+  state.remainingSeconds = Math.max(0, Math.ceil((state.deadline - Date.now()) / 1000));
+  updateTimerDisplay();
+  if (state.remainingSeconds === 0) finishSession({ timedOut: true });
+  else saveSession();
+});
 
 els.examModeButton.addEventListener("click", () => setMode("exam"));
 els.practiceModeButton.addEventListener("click", () => setMode("practice"));
