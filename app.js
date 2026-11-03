@@ -5,6 +5,8 @@ const SESSION_KEY = "amateurRadioQuiz.session.v1";
 const EXAM_DURATION_SECONDS = 40 * 60;
 const BANK_PAGE_SIZE = 20;
 const FIGURE_ASSET_VERSION = "20260625-1";
+let expiredSessionNotice = false;
+let allowPageExit = false;
 
 const EXAM_RULES = {
   totalQuestions: 35,
@@ -191,7 +193,8 @@ function saveSession() {
       questionIds: state.questions.map((question) => question.id),
       answers: state.answers,
       currentIndex: state.currentIndex,
-      deadline: state.deadline
+      deadline: state.deadline,
+      startedAt: state.sessionStartedAt
     }));
   } catch {
     // Storage may be unavailable or full; the current session remains usable.
@@ -225,6 +228,12 @@ function restoreSession(questionBank) {
     clearSavedSession();
     return false;
   }
+  const deadline = Number(saved.deadline);
+  if (!Number.isFinite(deadline) || deadline <= Date.now()) {
+    clearSavedSession();
+    expiredSessionNotice = true;
+    return false;
+  }
   if (!window.confirm("發現尚未交卷的作答進度，要繼續上次作答嗎？選擇取消會重新開始。")) {
     clearSavedSession();
     return false;
@@ -233,11 +242,11 @@ function restoreSession(questionBank) {
   state.questions = questions;
   state.answers = saved.answers && typeof saved.answers === "object" ? saved.answers : {};
   state.currentIndex = Math.min(questions.length - 1, Math.max(0, Number(saved.currentIndex) || 0));
-  state.deadline = Number(saved.deadline) || Date.now();
+  state.deadline = deadline;
   state.remainingSeconds = Math.max(0, Math.ceil((state.deadline - Date.now()) / 1000));
   state.submitted = false;
   state.endedByTimeout = false;
-  state.sessionStartedAt = Date.now();
+  state.sessionStartedAt = Number(saved.startedAt) || Date.now();
   if (state.mode === "practice") {
     state.practiceCategoryKeys = [...new Set(questions.map((question) => question.categoryKey))];
     els.practiceCategoryInputs.forEach((input) => { input.checked = state.practiceCategoryKeys.includes(input.value); });
@@ -481,17 +490,7 @@ function startWrongPractice(questionIds = null) {
 function showWrongPractice(questionIds = null) {
   const entries = Array.isArray(questionIds) ? getWrongEntriesByIds(questionIds) : getWrongEntries();
   if (!entries.length) return;
-  els.examLayout.hidden = false;
-  els.quizActions.hidden = false;
-  els.wrongBookPanel.hidden = true;
-  els.statsPanel.hidden = true;
-  els.questionBankPanel.hidden = true;
-  els.practiceControls.hidden = true;
-  els.examModeButton.className = "mode-tab";
-  els.practiceModeButton.className = "mode-tab";
-  els.bankModeButton.className = "mode-tab";
-  els.wrongBookModeButton.className = "mode-tab active";
-  els.statsModeButton.className = "mode-tab";
+  setModePresentation("wrongPractice");
   startWrongPractice(questionIds);
   render();
 }
@@ -873,8 +872,7 @@ function updateWrongRecordsFromExam() {
   updateWrongBookBadge();
 }
 
-function setMode(mode) {
-  state.mode = mode;
+function setModePresentation(mode) {
   const isWrongBook = mode === "wrongBook";
   const isStats = mode === "stats";
   const isBank = mode === "bank";
@@ -898,6 +896,15 @@ function setMode(mode) {
   els.statsModeButton.setAttribute("aria-current", isStats ? "page" : "false");
   const modeLabels = { exam: "模擬考", practice: "題庫練習", wrongPractice: "錯題練習", wrongBook: "錯題本", stats: "統計", bank: "瀏覽題庫" };
   document.querySelector("#modeEyebrow").textContent = modeLabels[mode] || "測驗練習";
+}
+
+function setMode(mode) {
+  state.mode = mode;
+  const isWrongBook = mode === "wrongBook";
+  const isStats = mode === "stats";
+  const isBank = mode === "bank";
+  const isPractice = mode === "practice";
+  setModePresentation(mode);
 
   if (mode === "exam") {
     startNewExam();
@@ -1445,15 +1452,14 @@ async function loadQuestions() {
     state.questionBank = quiz.questions || [];
     const resumed = restoreSession(state.questionBank);
     if (resumed) {
-      els.examModeButton.className = state.mode === "exam" ? "mode-tab active" : "mode-tab";
-      els.practiceModeButton.className = state.mode === "practice" ? "mode-tab active" : "mode-tab";
-      els.practiceControls.hidden = state.mode !== "practice";
+      setModePresentation(state.mode);
       resumeTimer();
     } else {
       startNewExam(state.questionBank);
     }
     updateWrongBookBadge();
     render();
+    if (expiredSessionNotice) setFeedbackText("上次作答已逾時，已開啟新考卷。");
   } catch (error) {
     els.questionTitle.textContent = "題庫讀取失敗";
     setFeedbackText("請確認是透過本機伺服器開啟，而不是直接開啟 HTML 檔。");
@@ -1462,10 +1468,14 @@ async function loadQuestions() {
 }
 
 window.addEventListener("beforeunload", (event) => {
-  if (state.submitted || !state.questions.length || !["exam", "practice", "wrongPractice"].includes(state.mode)) return;
+  if (allowPageExit || state.submitted || !getAnsweredCount()) return;
   saveSession();
   event.preventDefault();
   event.returnValue = "";
+});
+
+document.querySelector(".portal-link").addEventListener("click", () => {
+  allowPageExit = true;
 });
 
 document.addEventListener("visibilitychange", () => {
