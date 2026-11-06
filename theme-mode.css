@@ -5,3 +5,22 @@
 .tsy-theme-toggle:focus-visible { outline: 3px solid #0a887e; outline-offset: 3px; }
 :root[data-theme="dark"] .tsy-theme-toggle { color: var(--ink, #f6f3e9); background: var(--panel, #193336); border-color: var(--line, #526b6b); box-shadow: 0 2px 0 rgba(0,0,0,.25); }
 :root[data-theme="dark"] .tsy-theme-toggle:focus-visible { outline-color: #8ee0cf; }
+
+/* Full light/dark text contrast review. */
+
+:root:not([data-theme="dark"]){--muted:#56645f}
+:root[data-theme="dark"] .score-card{background:#193336}
+:root[data-theme="dark"] .score-card :is(span,strong){color:#f6f3e9}
+
+
+:root:not([data-theme="dark"] ) .follow-link{background:#1768d2;color:#fff}
+
+:root:not([data-theme="dark"] ) .follow-link span{background:transparent;color:#fff}
+
+:root:not([data-theme="dark"] ) .feedback-explanation .feedback-label{background:#875000;color:#fff}
+:root[data-theme="dark"] .feedback :is(.feedback-answer,.feedback-explanation) .feedback-label{color:#102527}
+
+:root[data-theme="dark"] .practice-checks label{background:#203d40;color:#f6f3e9;border-color:#526b6b}
+
+:root[data-theme="dark"] :is(.bank-rule-details,.bank-rule-item,.question-bank-item,.wrongbook-item,.wrongbook-session,.stats-card,.stats-category-item,.recent-exam-item){background:#193336;border-color:#526b6b;color:#f6f3e9}
+:root[data-theme="dark"] .question-figure figcaption{color:#324447}
