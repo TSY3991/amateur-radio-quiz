@@ -1,0 +1,7 @@
+:root { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+.tsy-theme-toggle { position: static; z-index: auto; display: inline-flex; align-items: center; justify-content: center; gap: .35rem; flex: 0 0 auto; min-height: 44px; margin-inline-start: auto; padding: .55rem .9rem; border: 1px solid var(--line, #c5d9cb); border-radius: 999px; color: var(--ink, #173e37); background: var(--panel, #fffdf5); box-shadow: 0 2px 0 rgba(23,62,55,.12); font: inherit; font-size: .9rem; font-weight: 800; line-height: 1.2; cursor: pointer; white-space: nowrap; }
+.tsy-theme-toggle:hover { filter: brightness(.96); }
+.tsy-theme-toggle:focus-visible { outline: 3px solid #0a887e; outline-offset: 3px; }
+:root[data-theme="dark"] .tsy-theme-toggle { color: var(--ink, #f6f3e9); background: var(--panel, #193336); border-color: var(--line, #526b6b); box-shadow: 0 2px 0 rgba(0,0,0,.25); }
+:root[data-theme="dark"] .tsy-theme-toggle:focus-visible { outline-color: #8ee0cf; }
