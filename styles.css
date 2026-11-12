@@ -107,8 +107,8 @@ button.secondary:hover:not(:disabled) {
 
 h1 {
   margin: 0;
-  font-size: 34px;
-  line-height: 1.18;
+  font-size: 26px;
+  line-height: 1.25;
 }
 
 .exam-note {
@@ -543,9 +543,9 @@ h1 {
 }
 
 #questionTitle {
-  margin: 0 0 24px;
-  font-size: 26px;
-  line-height: 1.5;
+  margin: 0 0 20px;
+  font-size: 20px;
+  line-height: 1.55;
 }
 
 .question-figure-slot {
