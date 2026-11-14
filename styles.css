@@ -148,6 +148,27 @@ h1 {
   transform: translateY(-1px);
 }
 
+/* 2026 現代版面：消除多餘滑桿、防止文字被截斷與跳行 */
+.quiz-shell {
+  max-width: 900px;
+  width: 100%;
+}
+
+.table-wrap,
+.options-list,
+.question-block {
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+}
+
+@media (max-width: 640px) {
+  .header-actions {
+    overflow-x: visible !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+}
+
 .portal-mark {
   position: relative;
   display: inline-flex;
